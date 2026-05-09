@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API = "http://localhost:8000/api";
+const API = import.meta.env.VITE_API_URL || "/api";
 const MO = "'JetBrains Mono', monospace";
 const SA = "'Space Grotesk', sans-serif";
 

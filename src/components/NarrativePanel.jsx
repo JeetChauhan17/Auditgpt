@@ -6,7 +6,7 @@ export default function NarrativePanel({ companyId, cachedNarrative }) {
   const [streaming, setStreaming] = useState(false)
   const textRef = useRef(null)
 
-  const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+  const API = import.meta.env.VITE_API_URL || '/api'
 
   useEffect(() => {
     // If we have a cached narrative, stream it locally for effect
@@ -30,7 +30,7 @@ export default function NarrativePanel({ companyId, cachedNarrative }) {
     // Otherwise, stream from SSE
     setText('')
     setStreaming(true)
-    const evtSource = new EventSource(`${API}/api/stream/${companyId}`)
+    const evtSource = new EventSource(`${API}/stream/${companyId}`)
 
     evtSource.onmessage = (e) => {
       if (e.data === '[DONE]') {
