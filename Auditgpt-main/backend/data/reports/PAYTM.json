@@ -1,0 +1,577 @@
+{
+  "company_id": "PAYTM",
+  "company_name": "Paytm",
+  "sector": "Internet",
+  "composite_score": 2.51,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": -3.134,
+    "manipulation_likely": false,
+    "components": {
+      "DSRI": 1.15,
+      "GMI": 0.433,
+      "AQI": 0.622,
+      "SGI": 0.6915,
+      "DEPI": 0.862,
+      "SGAI": null,
+      "LVGI": 0.7878,
+      "TATA": -0.0253
+    }
+  },
+  "altman": {
+    "z_score": 7.2574,
+    "zone": "safe",
+    "components": {
+      "X1_working_capital_ta": 0,
+      "X2_retained_earnings_ta": 0.6976,
+      "X3_ebit_ta": -0.0702,
+      "X4_market_cap_tl": 10.3179,
+      "X5_revenue_ta": 0.3217
+    }
+  },
+  "anomaly_map": {
+    "OPM": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "NPM": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "ROE": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "ROCE": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Debt to equity": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Current Ratio": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Interest Coverage Ratio": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Debtor Days": {
+      "Mar 2015": 0.3945,
+      "Mar 2016": -0.2433,
+      "Mar 2019": -0.2792,
+      "Mar 2020": -0.161,
+      "Mar 2021": 0.438,
+      "Mar 2022": 0.086,
+      "Mar 2023": 0.1048,
+      "Mar 2024": 0.4765,
+      "Mar 2025": 0.5265
+    },
+    "Inventory Turnover": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Asset Turnover": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Dividend Payout": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Earnings Per Share": {
+      "Mar 2015": null,
+      "Mar 2016": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    }
+  },
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {
+    "beneish_normalized": 0,
+    "altman_normalized": 0,
+    "industry_z_normalized": 10.04,
+    "trend_break_normalized": 0.0
+  },
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "PB Fintech",
+      "sector": "Internet",
+      "composite_score": 7.34,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Info Edge",
+      "sector": "Internet",
+      "composite_score": 13.43,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {
+      "Sales+": {
+        "Mar 2015": 323.0,
+        "Mar 2016": 855.0,
+        "Mar 2019": 3224.0,
+        "Mar 2020": 3279.0,
+        "Mar 2021": 2801.0,
+        "Mar 2022": 4974.0,
+        "Mar 2023": 7990.0,
+        "Mar 2024": 9978.0,
+        "Mar 2025": 6900.0,
+        "TTM": 8084.0
+      },
+      "Expenses+": {
+        "Mar 2015": 683.0,
+        "Mar 2016": 2523.0,
+        "Mar 2019": 7592.0,
+        "Mar 2020": 5964.0,
+        "Mar 2021": 4640.0,
+        "Mar 2022": 7358.0,
+        "Mar 2023": 9634.0,
+        "Mar 2024": 10921.0,
+        "Mar 2025": 8406.0,
+        "TTM": 7806.0
+      },
+      "Operating Profit": {
+        "Mar 2015": -360.0,
+        "Mar 2016": -1668.0,
+        "Mar 2019": -4368.0,
+        "Mar 2020": -2685.0,
+        "Mar 2021": -1838.0,
+        "Mar 2022": -2384.0,
+        "Mar 2023": -1644.0,
+        "Mar 2024": -943.0,
+        "Mar 2025": -1506.0,
+        "TTM": 278.0
+      },
+      "OPM %": {
+        "Mar 2015": null,
+        "Mar 2016": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      },
+      "Other Income+": {
+        "Mar 2015": 16.0,
+        "Mar 2016": 164.0,
+        "Mar 2019": 280.0,
+        "Mar 2020": -45.0,
+        "Mar 2021": 356.0,
+        "Mar 2022": 288.0,
+        "Mar 2023": 410.0,
+        "Mar 2024": 314.0,
+        "Mar 2025": 1550.0,
+        "TTM": 170.0
+      },
+      "Interest": {
+        "Mar 2015": 2.0,
+        "Mar 2016": 1.0,
+        "Mar 2019": 38.0,
+        "Mar 2020": 54.0,
+        "Mar 2021": 38.0,
+        "Mar 2022": 42.0,
+        "Mar 2023": 24.0,
+        "Mar 2024": 26.0,
+        "Mar 2025": 17.0,
+        "TTM": 18.0
+      },
+      "Depreciation": {
+        "Mar 2015": 21.0,
+        "Mar 2016": 28.0,
+        "Mar 2019": 112.0,
+        "Mar 2020": 174.0,
+        "Mar 2021": 178.0,
+        "Mar 2022": 247.0,
+        "Mar 2023": 485.0,
+        "Mar 2024": 736.0,
+        "Mar 2025": 673.0,
+        "TTM": 586.0
+      },
+      "Profit before tax": {
+        "Mar 2015": -367.0,
+        "Mar 2016": -1534.0,
+        "Mar 2019": -4237.0,
+        "Mar 2020": -2958.0,
+        "Mar 2021": -1698.0,
+        "Mar 2022": -2385.0,
+        "Mar 2023": -1743.0,
+        "Mar 2024": -1390.0,
+        "Mar 2025": -645.0,
+        "TTM": -156.0
+      },
+      "Tax %": {
+        "Mar 2015": null,
+        "Mar 2016": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      },
+      "Net Profit+": {
+        "Mar 2015": -372.0,
+        "Mar 2016": -1535.0,
+        "Mar 2019": -4231.0,
+        "Mar 2020": -2942.0,
+        "Mar 2021": -1701.0,
+        "Mar 2022": -2396.0,
+        "Mar 2023": -1776.0,
+        "Mar 2024": -1422.0,
+        "Mar 2025": -663.0,
+        "TTM": -176.0
+      },
+      "EPS in Rs": {
+        "Mar 2015": -123.02,
+        "Mar 2016": -331.99,
+        "Mar 2019": -726.78,
+        "Mar 2020": -470.27,
+        "Mar 2021": -280.42,
+        "Mar 2022": -36.9,
+        "Mar 2023": -28.02,
+        "Mar 2024": -22.3,
+        "Mar 2025": -10.33,
+        "TTM": -2.68
+      },
+      "Dividend Payout %": {
+        "Mar 2015": null,
+        "Mar 2016": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      }
+    },
+    "balance_sheet": {
+      "Equity Capital": {
+        "Mar 2015": 30.0,
+        "Mar 2016": 46.0,
+        "Mar 2019": 58.0,
+        "Mar 2020": 60.0,
+        "Mar 2021": 60.0,
+        "Mar 2022": 65.0,
+        "Mar 2023": 63.0,
+        "Mar 2024": 64.0,
+        "Mar 2025": 64.0,
+        "Sep 2025": 64.0
+      },
+      "Reserves": {
+        "Mar 2015": 354.0,
+        "Mar 2016": 2751.0,
+        "Mar 2019": 5667.0,
+        "Mar 2020": 8045.0,
+        "Mar 2021": 6474.0,
+        "Mar 2022": 14087.0,
+        "Mar 2023": 12952.0,
+        "Mar 2024": 13263.0,
+        "Mar 2025": 14963.0,
+        "Sep 2025": 15276.0
+      },
+      "Borrowings+": {
+        "Mar 2015": 0.0,
+        "Mar 2016": 15.0,
+        "Mar 2019": 932.0,
+        "Mar 2020": 428.0,
+        "Mar 2021": 612.0,
+        "Mar 2022": 222.0,
+        "Mar 2023": 223.0,
+        "Mar 2024": 177.0,
+        "Mar 2025": 160.0,
+        "Sep 2025": 160.0
+      },
+      "Other Liabilities+": {
+        "Mar 2015": 316.0,
+        "Mar 2016": 637.0,
+        "Mar 2019": 2107.0,
+        "Mar 2020": 1769.0,
+        "Mar 2021": 2004.0,
+        "Mar 2022": 3618.0,
+        "Mar 2023": 4727.0,
+        "Mar 2024": 5190.0,
+        "Mar 2025": 6261.0,
+        "Sep 2025": 7037.0
+      },
+      "Total Liabilities": {
+        "Mar 2015": 701.0,
+        "Mar 2016": 3450.0,
+        "Mar 2019": 8764.0,
+        "Mar 2020": 10302.0,
+        "Mar 2021": 9151.0,
+        "Mar 2022": 17991.0,
+        "Mar 2023": 17966.0,
+        "Mar 2024": 18693.0,
+        "Mar 2025": 21448.0,
+        "Sep 2025": 22537.0
+      },
+      "Fixed Assets+": {
+        "Mar 2015": 47.0,
+        "Mar 2016": 81.0,
+        "Mar 2019": 841.0,
+        "Mar 2020": 594.0,
+        "Mar 2021": 491.0,
+        "Mar 2022": 914.0,
+        "Mar 2023": 1209.0,
+        "Mar 2024": 1247.0,
+        "Mar 2025": 890.0,
+        "Sep 2025": 848.0
+      },
+      "CWIP": {
+        "Mar 2015": 11.0,
+        "Mar 2016": 59.0,
+        "Mar 2019": 56.0,
+        "Mar 2020": 15.0,
+        "Mar 2021": 24.0,
+        "Mar 2022": 12.0,
+        "Mar 2023": 11.0,
+        "Mar 2024": 14.0,
+        "Mar 2025": 16.0,
+        "Sep 2025": 6.0
+      },
+      "Investments": {
+        "Mar 2015": 112.0,
+        "Mar 2016": 2308.0,
+        "Mar 2019": 2849.0,
+        "Mar 2020": 3740.0,
+        "Mar 2021": 413.0,
+        "Mar 2022": 1230.0,
+        "Mar 2023": 2697.0,
+        "Mar 2024": 4628.0,
+        "Mar 2025": 4172.0,
+        "Sep 2025": 5653.0
+      },
+      "Other Assets+": {
+        "Mar 2015": 530.0,
+        "Mar 2016": 1002.0,
+        "Mar 2019": 5018.0,
+        "Mar 2020": 5954.0,
+        "Mar 2021": 8223.0,
+        "Mar 2022": 15836.0,
+        "Mar 2023": 14048.0,
+        "Mar 2024": 12804.0,
+        "Mar 2025": 16370.0,
+        "Sep 2025": 16030.0
+      },
+      "Total Assets": {
+        "Mar 2015": 701.0,
+        "Mar 2016": 3450.0,
+        "Mar 2019": 8764.0,
+        "Mar 2020": 10302.0,
+        "Mar 2021": 9151.0,
+        "Mar 2022": 17991.0,
+        "Mar 2023": 17966.0,
+        "Mar 2024": 18693.0,
+        "Mar 2025": 21448.0,
+        "Sep 2025": 22537.0
+      }
+    },
+    "cash_flow": {
+      "Cash from Operating Activity+": {
+        "Mar 2015": -334.0,
+        "Mar 2016": -1405.0,
+        "Mar 2019": -4476.0,
+        "Mar 2020": -2377.0,
+        "Mar 2021": -2082.0,
+        "Mar 2022": -1236.0,
+        "Mar 2023": 416.0,
+        "Mar 2024": 651.0,
+        "Mar 2025": -121.0
+      },
+      "Cash from Investing Activity+": {
+        "Mar 2015": -20.0,
+        "Mar 2016": -2229.0,
+        "Mar 2019": 1906.0,
+        "Mar 2020": -1997.0,
+        "Mar 2021": 1934.0,
+        "Mar 2022": -5484.0,
+        "Mar 2023": 2628.0,
+        "Mar 2024": 338.0,
+        "Mar 2025": -2031.0
+      },
+      "Cash from Financing Activity+": {
+        "Mar 2015": 459.0,
+        "Mar 2016": 3938.0,
+        "Mar 2019": 2110.0,
+        "Mar 2020": 5160.0,
+        "Mar 2021": -222.0,
+        "Mar 2022": 8054.0,
+        "Mar 2023": -1112.0,
+        "Mar 2024": -22.0,
+        "Mar 2025": -53.0
+      },
+      "Net Cash Flow": {
+        "Mar 2015": 104.0,
+        "Mar 2016": 304.0,
+        "Mar 2019": -460.0,
+        "Mar 2020": 786.0,
+        "Mar 2021": -371.0,
+        "Mar 2022": 1334.0,
+        "Mar 2023": 1931.0,
+        "Mar 2024": 967.0,
+        "Mar 2025": -2205.0
+      }
+    },
+    "ratios": {
+      "Debtor Days": {
+        "Mar 2015": 100.0,
+        "Mar 2016": 53.0,
+        "Mar 2019": 29.0,
+        "Mar 2020": 34.0,
+        "Mar 2021": 61.0,
+        "Mar 2022": 55.0,
+        "Mar 2023": 57.0,
+        "Mar 2024": 60.0,
+        "Mar 2025": 69.0
+      },
+      "Inventory Days": {
+        "Mar 2015": null,
+        "Mar 2016": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null
+      },
+      "Days Payable": {
+        "Mar 2015": null,
+        "Mar 2016": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null
+      },
+      "Cash Conversion Cycle": {
+        "Mar 2015": 100.0,
+        "Mar 2016": 53.0,
+        "Mar 2019": 29.0,
+        "Mar 2020": 34.0,
+        "Mar 2021": 61.0,
+        "Mar 2022": 55.0,
+        "Mar 2023": 57.0,
+        "Mar 2024": 60.0,
+        "Mar 2025": 69.0
+      },
+      "Working Capital Days": {
+        "Mar 2015": 12.0,
+        "Mar 2016": -83.0,
+        "Mar 2019": 195.0,
+        "Mar 2020": 116.0,
+        "Mar 2021": 289.0,
+        "Mar 2022": 162.0,
+        "Mar 2023": 61.0,
+        "Mar 2024": -18.0,
+        "Mar 2025": -119.0
+      },
+      "ROCE %": {
+        "Mar 2015": null,
+        "Mar 2016": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null
+      }
+    }
+  },
+  "narrative": null
+}

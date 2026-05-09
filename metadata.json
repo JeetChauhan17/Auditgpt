@@ -1,0 +1,6 @@
+{
+  "name": "AuditGPT",
+  "description": "AI-powered forensic audit and financial reporting application. Migrated to Node.js for seamless Vercel deployment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

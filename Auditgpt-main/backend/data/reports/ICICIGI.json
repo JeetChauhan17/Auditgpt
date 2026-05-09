@@ -1,0 +1,64 @@
+{
+  "company_id": "ICICIGI",
+  "company_name": "ICICI Lombard",
+  "sector": "Insurance",
+  "composite_score": 0,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": null,
+    "manipulation_likely": false,
+    "components": {}
+  },
+  "altman": {
+    "z_score": null,
+    "zone": "unknown",
+    "components": {}
+  },
+  "anomaly_map": {},
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {},
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Life Insurance Corp",
+      "sector": "Insurance",
+      "composite_score": 31.36,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "HDFC Life Insurance",
+      "sector": "Insurance",
+      "composite_score": 28.39,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "General Insurance Corp",
+      "sector": "Insurance",
+      "composite_score": 27.82,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Max Financial",
+      "sector": "Insurance",
+      "composite_score": 30.96,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "New India Assurance",
+      "sector": "Insurance",
+      "composite_score": 32.37,
+      "fraud_risk": "Medium"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {},
+    "balance_sheet": {},
+    "cash_flow": {},
+    "ratios": {}
+  },
+  "narrative": null
+}

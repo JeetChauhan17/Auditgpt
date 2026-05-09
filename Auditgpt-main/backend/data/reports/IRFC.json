@@ -1,0 +1,64 @@
+{
+  "company_id": "IRFC",
+  "company_name": "Indian Railway Finance",
+  "sector": "Financial Services",
+  "composite_score": 0,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": null,
+    "manipulation_likely": false,
+    "components": {}
+  },
+  "altman": {
+    "z_score": null,
+    "zone": "unknown",
+    "components": {}
+  },
+  "anomaly_map": {},
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {},
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Bajaj Finance",
+      "sector": "Financial Services",
+      "composite_score": 31.3,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Bajaj Finserv",
+      "sector": "Financial Services",
+      "composite_score": 33.82,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Power Finance Corp",
+      "sector": "Financial Services",
+      "composite_score": 35.47,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Muthoot Finance",
+      "sector": "Financial Services",
+      "composite_score": 34.86,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Cholamandalam Finance",
+      "sector": "Financial Services",
+      "composite_score": 36.16,
+      "fraud_risk": "Medium"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {},
+    "balance_sheet": {},
+    "cash_flow": {},
+    "ratios": {}
+  },
+  "narrative": null
+}

@@ -1,0 +1,184 @@
+.report {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.report-loading, .report-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  gap: 16px;
+}
+
+.report-loading {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.report-loading::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: var(--green);
+  animation: loading-bar 1.5s ease-in-out infinite;
+}
+
+@keyframes loading-bar {
+  0% { width: 20px; opacity: 0.3; }
+  50% { width: 80px; opacity: 1; }
+  100% { width: 20px; opacity: 0.3; }
+}
+
+.report-error button {
+  padding: 10px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--green);
+  font-family: var(--font-mono);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.report-error button:hover {
+  background: rgba(0, 255, 136, 0.05);
+  border-color: var(--green);
+}
+
+/* Header */
+.report-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  transition: opacity 0.15s;
+}
+
+.back-btn:hover {
+  opacity: 0.7;
+}
+
+.company-name {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-family: var(--font-mono);
+}
+
+.company-sector {
+  color: var(--text-muted);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Hero section — score + heatmap fill viewport */
+.hero-section {
+  min-height: calc(100vh - 200px);
+  margin-bottom: 40px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  height: 100%;
+}
+
+.fraud-score-card, .anomaly-map-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 28px;
+  transition: border-color 0.2s;
+}
+
+.fraud-score-card:hover, .anomaly-map-card:hover {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Detail sections below the fold */
+.detail-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.report-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+  transition: border-color 0.2s;
+}
+
+.report-section:hover {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Placeholder for missing data */
+.placeholder-component {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 40px;
+  text-align: center;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.narrative-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.narrative-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+  .company-name {
+    font-size: 28px;
+  }
+}

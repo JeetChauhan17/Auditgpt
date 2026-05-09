@@ -1,0 +1,64 @@
+{
+  "company_id": "BANDHANBNK",
+  "company_name": "Bandhan Bank",
+  "sector": "Banking",
+  "composite_score": 0,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": null,
+    "manipulation_likely": false,
+    "components": {}
+  },
+  "altman": {
+    "z_score": null,
+    "zone": "unknown",
+    "components": {}
+  },
+  "anomaly_map": {},
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {},
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "HDFC Bank",
+      "sector": "Banking",
+      "composite_score": 31.51,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "State Bank of India",
+      "sector": "Banking",
+      "composite_score": 32.56,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "ICICI Bank",
+      "sector": "Banking",
+      "composite_score": 31.52,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Axis Bank",
+      "sector": "Banking",
+      "composite_score": 31.28,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Kotak Mahindra Bank",
+      "sector": "Banking",
+      "composite_score": 29.93,
+      "fraud_risk": "Medium"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {},
+    "balance_sheet": {},
+    "cash_flow": {},
+    "ratios": {}
+  },
+  "narrative": null
+}

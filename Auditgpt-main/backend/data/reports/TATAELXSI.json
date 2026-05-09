@@ -1,0 +1,550 @@
+{
+  "company_id": "TATAELXSI",
+  "company_name": "Tata Elxsi",
+  "sector": "IT Services",
+  "composite_score": 5.12,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": -3.0113,
+    "manipulation_likely": false,
+    "components": {
+      "DSRI": 0.9041,
+      "GMI": 0.8432,
+      "AQI": 0.8412,
+      "SGI": 1.0955,
+      "DEPI": 1.2646,
+      "SGAI": null,
+      "LVGI": null,
+      "TATA": -0.088
+    }
+  },
+  "altman": {
+    "z_score": 89.2198,
+    "zone": "safe",
+    "components": {
+      "X1_working_capital_ta": 0,
+      "X2_retained_earnings_ta": 0.5408,
+      "X3_ebit_ta": 0.382,
+      "X4_market_cap_tl": 142.3005,
+      "X5_revenue_ta": 1.8219
+    }
+  },
+  "anomaly_map": {
+    "OPM": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "NPM": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "ROE": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "ROCE": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "Debt to equity": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "Current Ratio": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "Interest Coverage Ratio": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "Debtor Days": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": -0.1336,
+      "Mar 2015": -0.8951
+    },
+    "Inventory Turnover": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "Asset Turnover": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "Dividend Payout": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    },
+    "Earnings Per Share": {
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null,
+      "Mar 2011": null,
+      "Mar 2012": null,
+      "Mar 2013": null,
+      "Mar 2014": null,
+      "Mar 2015": null
+    }
+  },
+  "trend_breaks": {
+    "breaks": {
+      "Debtor Days": [
+        "Mar 2010"
+      ]
+    },
+    "total_count": 1
+  },
+  "red_flags": [
+    {
+      "flag_type": "Sudden change in Debtor Days",
+      "severity": "Medium",
+      "first_appeared": 2010,
+      "evolution": [
+        "Abnormal year-over-year change detected in Mar 2010"
+      ],
+      "industry_context": "YoY change in Debtor Days exceeded 2 standard deviations from historical pattern",
+      "citation": {
+        "filing_year": 2010,
+        "filing_type": "Ratios",
+        "metric_name": "Debtor Days",
+        "reported_value": 0,
+        "source": "Trend break detection"
+      }
+    }
+  ],
+  "breakdown": {
+    "beneish_normalized": 0,
+    "altman_normalized": 0,
+    "industry_z_normalized": 17.14,
+    "trend_break_normalized": 8.33
+  },
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Tata Consultancy Services",
+      "sector": "IT Services",
+      "composite_score": 10.39,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Infosys",
+      "sector": "IT Services",
+      "composite_score": 6.45,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "HCL Technologies",
+      "sector": "IT Services",
+      "composite_score": 10.12,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Wipro",
+      "sector": "IT Services",
+      "composite_score": 10.25,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Tech Mahindra",
+      "sector": "IT Services",
+      "composite_score": 9.94,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {
+      "Sales+": {
+        "Mar 2008": 402.0,
+        "Mar 2009": 419.0,
+        "Mar 2010": 388.0,
+        "Mar 2011": 416.0,
+        "Mar 2012": 539.0,
+        "Mar 2013": 622.0,
+        "Mar 2014": 775.0,
+        "Mar 2015": 849.0
+      },
+      "Expenses+": {
+        "Mar 2008": 327.0,
+        "Mar 2009": 338.0,
+        "Mar 2010": 320.0,
+        "Mar 2011": 368.0,
+        "Mar 2012": 464.0,
+        "Mar 2013": 549.0,
+        "Mar 2014": 637.0,
+        "Mar 2015": 671.0
+      },
+      "Operating Profit": {
+        "Mar 2008": 75.0,
+        "Mar 2009": 82.0,
+        "Mar 2010": 68.0,
+        "Mar 2011": 48.0,
+        "Mar 2012": 75.0,
+        "Mar 2013": 73.0,
+        "Mar 2014": 137.0,
+        "Mar 2015": 178.0
+      },
+      "OPM %": {
+        "Mar 2008": null,
+        "Mar 2009": null,
+        "Mar 2010": null,
+        "Mar 2011": null,
+        "Mar 2012": null,
+        "Mar 2013": null,
+        "Mar 2014": null,
+        "Mar 2015": null
+      },
+      "Other Income+": {
+        "Mar 2008": 2.0,
+        "Mar 2009": 0.0,
+        "Mar 2010": 1.0,
+        "Mar 2011": 4.0,
+        "Mar 2012": 4.0,
+        "Mar 2013": -11.0,
+        "Mar 2014": 12.0,
+        "Mar 2015": 3.0
+      },
+      "Interest": {
+        "Mar 2008": 2.0,
+        "Mar 2009": 4.0,
+        "Mar 2010": 2.0,
+        "Mar 2011": 2.0,
+        "Mar 2012": 3.0,
+        "Mar 2013": 5.0,
+        "Mar 2014": 3.0,
+        "Mar 2015": 1.0
+      },
+      "Depreciation": {
+        "Mar 2008": 13.0,
+        "Mar 2009": 16.0,
+        "Mar 2010": 17.0,
+        "Mar 2011": 17.0,
+        "Mar 2012": 21.0,
+        "Mar 2013": 24.0,
+        "Mar 2014": 35.0,
+        "Mar 2015": 26.0
+      },
+      "Profit before tax": {
+        "Mar 2008": 62.0,
+        "Mar 2009": 62.0,
+        "Mar 2010": 51.0,
+        "Mar 2011": 32.0,
+        "Mar 2012": 55.0,
+        "Mar 2013": 33.0,
+        "Mar 2014": 112.0,
+        "Mar 2015": 155.0
+      },
+      "Tax %": {
+        "Mar 2008": null,
+        "Mar 2009": null,
+        "Mar 2010": null,
+        "Mar 2011": null,
+        "Mar 2012": null,
+        "Mar 2013": null,
+        "Mar 2014": null,
+        "Mar 2015": null
+      },
+      "Net Profit+": {
+        "Mar 2008": 53.0,
+        "Mar 2009": 58.0,
+        "Mar 2010": 49.0,
+        "Mar 2011": 33.0,
+        "Mar 2012": 35.0,
+        "Mar 2013": 21.0,
+        "Mar 2014": 72.0,
+        "Mar 2015": 102.0
+      },
+      "EPS in Rs": {
+        "Mar 2008": 8.48,
+        "Mar 2009": 9.34,
+        "Mar 2010": 7.84,
+        "Mar 2011": 5.22,
+        "Mar 2012": 5.55,
+        "Mar 2013": 3.42,
+        "Mar 2014": 11.6,
+        "Mar 2015": 16.38
+      },
+      "Dividend Payout %": {
+        "Mar 2008": null,
+        "Mar 2009": null,
+        "Mar 2010": null,
+        "Mar 2011": null,
+        "Mar 2012": null,
+        "Mar 2013": null,
+        "Mar 2014": null,
+        "Mar 2015": null
+      }
+    },
+    "balance_sheet": {
+      "Equity Capital": {
+        "Mar 2008": 31.0,
+        "Mar 2009": 31.0,
+        "Mar 2010": 31.0,
+        "Mar 2011": 31.0,
+        "Mar 2012": 31.0,
+        "Mar 2013": 31.0,
+        "Mar 2014": 31.0,
+        "Mar 2015": 31.0
+      },
+      "Reserves": {
+        "Mar 2008": 88.0,
+        "Mar 2009": 121.0,
+        "Mar 2010": 144.0,
+        "Mar 2011": 151.0,
+        "Mar 2012": 161.0,
+        "Mar 2013": 164.0,
+        "Mar 2014": 205.0,
+        "Mar 2015": 252.0
+      },
+      "Borrowings+": {
+        "Mar 2008": 55.0,
+        "Mar 2009": 13.0,
+        "Mar 2010": 34.0,
+        "Mar 2011": 25.0,
+        "Mar 2012": 34.0,
+        "Mar 2013": 59.0,
+        "Mar 2014": 0.0,
+        "Mar 2015": 0.0
+      },
+      "Other Liabilities+": {
+        "Mar 2008": 84.0,
+        "Mar 2009": 77.0,
+        "Mar 2010": 87.0,
+        "Mar 2011": 94.0,
+        "Mar 2012": 108.0,
+        "Mar 2013": 112.0,
+        "Mar 2014": 153.0,
+        "Mar 2015": 182.0
+      },
+      "Total Liabilities": {
+        "Mar 2008": 259.0,
+        "Mar 2009": 242.0,
+        "Mar 2010": 296.0,
+        "Mar 2011": 302.0,
+        "Mar 2012": 335.0,
+        "Mar 2013": 365.0,
+        "Mar 2014": 388.0,
+        "Mar 2015": 466.0
+      },
+      "Fixed Assets+": {
+        "Mar 2008": 99.0,
+        "Mar 2009": 97.0,
+        "Mar 2010": 90.0,
+        "Mar 2011": 91.0,
+        "Mar 2012": 100.0,
+        "Mar 2013": 99.0,
+        "Mar 2014": 97.0,
+        "Mar 2015": 98.0
+      },
+      "CWIP": {
+        "Mar 2008": 2.0,
+        "Mar 2009": 1.0,
+        "Mar 2010": 0.0,
+        "Mar 2011": 12.0,
+        "Mar 2012": 10.0,
+        "Mar 2013": 21.0,
+        "Mar 2014": 13.0,
+        "Mar 2015": 3.0
+      },
+      "Investments": {
+        "Mar 2008": 0.0,
+        "Mar 2009": 0.0,
+        "Mar 2010": 0.0,
+        "Mar 2011": 0.0,
+        "Mar 2012": 0.0,
+        "Mar 2013": 0.0,
+        "Mar 2014": 0.0,
+        "Mar 2015": 0.0
+      },
+      "Other Assets+": {
+        "Mar 2008": 158.0,
+        "Mar 2009": 144.0,
+        "Mar 2010": 206.0,
+        "Mar 2011": 199.0,
+        "Mar 2012": 224.0,
+        "Mar 2013": 245.0,
+        "Mar 2014": 279.0,
+        "Mar 2015": 364.0
+      },
+      "Total Assets": {
+        "Mar 2008": 259.0,
+        "Mar 2009": 242.0,
+        "Mar 2010": 296.0,
+        "Mar 2011": 302.0,
+        "Mar 2012": 335.0,
+        "Mar 2013": 365.0,
+        "Mar 2014": 388.0,
+        "Mar 2015": 466.0
+      }
+    },
+    "cash_flow": {
+      "Cash from Operating Activity+": {
+        "Mar 2008": 14.0,
+        "Mar 2009": 80.0,
+        "Mar 2010": 14.0,
+        "Mar 2011": 71.0,
+        "Mar 2012": 62.0,
+        "Mar 2013": 38.0,
+        "Mar 2014": 129.0,
+        "Mar 2015": 143.0
+      },
+      "Cash from Investing Activity+": {
+        "Mar 2008": -41.0,
+        "Mar 2009": -14.0,
+        "Mar 2010": -10.0,
+        "Mar 2011": -29.0,
+        "Mar 2012": -33.0,
+        "Mar 2013": -30.0,
+        "Mar 2014": -22.0,
+        "Mar 2015": -29.0
+      },
+      "Cash from Financing Activity+": {
+        "Mar 2008": 28.0,
+        "Mar 2009": -71.0,
+        "Mar 2010": -6.0,
+        "Mar 2011": -36.0,
+        "Mar 2012": -23.0,
+        "Mar 2013": -11.0,
+        "Mar 2014": -79.0,
+        "Mar 2015": -32.0
+      },
+      "Net Cash Flow": {
+        "Mar 2008": 1.0,
+        "Mar 2009": -5.0,
+        "Mar 2010": -2.0,
+        "Mar 2011": 7.0,
+        "Mar 2012": 6.0,
+        "Mar 2013": -4.0,
+        "Mar 2014": 28.0,
+        "Mar 2015": 82.0
+      }
+    },
+    "ratios": {
+      "Debtor Days": {
+        "Mar 2008": 95.0,
+        "Mar 2009": 80.0,
+        "Mar 2010": 123.0,
+        "Mar 2011": 94.0,
+        "Mar 2012": 85.0,
+        "Mar 2013": 83.0,
+        "Mar 2014": 73.0,
+        "Mar 2015": 66.0
+      },
+      "Inventory Days": {
+        "Mar 2008": 2.0,
+        "Mar 2009": null,
+        "Mar 2010": 1.0,
+        "Mar 2011": 9.0,
+        "Mar 2012": 0.0,
+        "Mar 2013": null,
+        "Mar 2014": 0.0,
+        "Mar 2015": null
+      },
+      "Days Payable": {
+        "Mar 2008": 400.0,
+        "Mar 2009": null,
+        "Mar 2010": 549.0,
+        "Mar 2011": 678.0,
+        "Mar 2012": 385.0,
+        "Mar 2013": null,
+        "Mar 2014": null,
+        "Mar 2015": null
+      },
+      "Cash Conversion Cycle": {
+        "Mar 2008": -303.0,
+        "Mar 2009": 80.0,
+        "Mar 2010": -425.0,
+        "Mar 2011": -575.0,
+        "Mar 2012": -300.0,
+        "Mar 2013": 83.0,
+        "Mar 2014": 73.0,
+        "Mar 2015": 66.0
+      },
+      "Working Capital Days": {
+        "Mar 2008": 52.0,
+        "Mar 2009": 39.0,
+        "Mar 2010": 103.0,
+        "Mar 2011": 15.0,
+        "Mar 2012": 10.0,
+        "Mar 2013": 4.0,
+        "Mar 2014": 22.0,
+        "Mar 2015": 10.0
+      },
+      "ROCE %": {
+        "Mar 2008": null,
+        "Mar 2009": null,
+        "Mar 2010": null,
+        "Mar 2011": null,
+        "Mar 2012": null,
+        "Mar 2013": null,
+        "Mar 2014": null,
+        "Mar 2015": null
+      }
+    }
+  },
+  "narrative": null
+}

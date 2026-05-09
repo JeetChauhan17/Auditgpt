@@ -1,0 +1,40 @@
+.narrative-panel {
+  width: 100%;
+}
+
+.streaming-indicator {
+  color: var(--green);
+  font-size: 10px;
+  margin-left: 12px;
+  animation: pulse-stream 1s ease-in-out infinite;
+}
+
+@keyframes pulse-stream {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.narrative-content {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 16px 0;
+}
+
+.narrative-placeholder {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.cursor {
+  color: var(--green);
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

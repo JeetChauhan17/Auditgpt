@@ -1,0 +1,33 @@
+{
+  "company_id": "PAGEIND",
+  "company_name": "Page Industries",
+  "sector": "Textiles",
+  "composite_score": 0,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": null,
+    "manipulation_likely": false,
+    "components": {}
+  },
+  "altman": {
+    "z_score": null,
+    "zone": "unknown",
+    "components": {}
+  },
+  "anomaly_map": {},
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {},
+  "sentiment_trend": {},
+  "peer_companies": [],
+  "financial_data": {
+    "profit_loss": {},
+    "balance_sheet": {},
+    "cash_flow": {},
+    "ratios": {}
+  },
+  "narrative": null
+}

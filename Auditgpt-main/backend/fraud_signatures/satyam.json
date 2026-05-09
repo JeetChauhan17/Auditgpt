@@ -1,0 +1,18 @@
+{
+  "company": "Satyam Computer Services",
+  "fraud_period": "2003-2008",
+  "description": "Systematic inflation of revenue, operating margins, and cash balances over 6 years",
+  "trajectory": {
+    "DSRI": {"2003": 1.02, "2004": 1.15, "2005": 1.28, "2006": 1.45, "2007": 1.62, "2008": 1.85},
+    "revenue_growth": {"2003": 0.35, "2004": 0.42, "2005": 0.38, "2006": 0.45, "2007": 0.40, "2008": 0.36},
+    "cfo_ni_ratio": {"2003": 0.85, "2004": 0.72, "2005": 0.58, "2006": 0.42, "2007": 0.30, "2008": 0.15},
+    "beneish_m": {"2003": -2.10, "2004": -1.85, "2005": -1.52, "2006": -1.20, "2007": -0.85, "2008": -0.45},
+    "altman_z": {"2003": 3.20, "2004": 2.85, "2005": 2.50, "2006": 2.10, "2007": 1.75, "2008": 1.30}
+  },
+  "key_indicators": [
+    "Days Sales in Receivables Index (DSRI) steadily rising — inflated revenue not converting to cash",
+    "CFO/Net Income ratio declining — profits exist only on paper",
+    "Beneish M-Score crossing -1.78 threshold by 2006",
+    "Cash balances fabricated — Rs 5,040 crore shown but did not exist"
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "company_id": "COLPAL",
+  "company_name": "Colgate Palmolive",
+  "sector": "FMCG",
+  "composite_score": 4.86,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": -2.3064,
+    "manipulation_likely": false,
+    "components": {
+      "DSRI": 1.0,
+      "GMI": 0.7633,
+      "AQI": 0.921,
+      "SGI": 1.1543,
+      "DEPI": 0.9293,
+      "SGAI": null,
+      "LVGI": 0.9028,
+      "TATA": 0.0362
+    }
+  },
+  "altman": {
+    "z_score": 59.6341,
+    "zone": "safe",
+    "components": {
+      "X1_working_capital_ta": 0,
+      "X2_retained_earnings_ta": 0.3582,
+      "X3_ebit_ta": 0.4904,
+      "X4_market_cap_tl": 92.1661,
+      "X5_revenue_ta": 2.2147
+    }
+  },
+  "anomaly_map": {
+    "OPM": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "NPM": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "ROE": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "ROCE": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "Debt to equity": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "Current Ratio": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "Interest Coverage Ratio": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "Debtor Days": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "Inventory Turnover": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "Asset Turnover": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "Dividend Payout": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    },
+    "Earnings Per Share": {
+      "Mar 2006": null,
+      "Mar 2007": null,
+      "Mar 2008": null,
+      "Mar 2009": null,
+      "Mar 2010": null
+    }
+  },
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {
+    "beneish_normalized": 13.87,
+    "altman_normalized": 0,
+    "industry_z_normalized": 0.0,
+    "trend_break_normalized": 0.0
+  },
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Hindustan Unilever",
+      "sector": "FMCG",
+      "composite_score": 10.17,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "ITC",
+      "sector": "FMCG",
+      "composite_score": 16.98,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Nestle India",
+      "sector": "FMCG",
+      "composite_score": 10.2,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Britannia Industries",
+      "sector": "FMCG",
+      "composite_score": 12.77,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Varun Beverages",
+      "sector": "FMCG",
+      "composite_score": 0,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {
+      "Sales+": {
+        "Mar 2006": 1129.0,
+        "Mar 2007": 1291.0,
+        "Mar 2008": 1470.0,
+        "Mar 2009": 1698.0,
+        "Mar 2010": 1960.0
+      },
+      "Expenses+": {
+        "Mar 2006": 949.0,
+        "Mar 2007": 1091.0,
+        "Mar 2008": 1219.0,
+        "Mar 2009": 1411.0,
+        "Mar 2010": 1525.0
+      },
+      "Operating Profit": {
+        "Mar 2006": 180.0,
+        "Mar 2007": 199.0,
+        "Mar 2008": 251.0,
+        "Mar 2009": 287.0,
+        "Mar 2010": 434.0
+      },
+      "OPM %": {
+        "Mar 2006": null,
+        "Mar 2007": null,
+        "Mar 2008": null,
+        "Mar 2009": null,
+        "Mar 2010": null
+      },
+      "Other Income+": {
+        "Mar 2006": 55.0,
+        "Mar 2007": 17.0,
+        "Mar 2008": 77.0,
+        "Mar 2009": 91.0,
+        "Mar 2010": 98.0
+      },
+      "Interest": {
+        "Mar 2006": 1.0,
+        "Mar 2007": 1.0,
+        "Mar 2008": 1.0,
+        "Mar 2009": 2.0,
+        "Mar 2010": 2.0
+      },
+      "Depreciation": {
+        "Mar 2006": 43.0,
+        "Mar 2007": 20.0,
+        "Mar 2008": 21.0,
+        "Mar 2009": 28.0,
+        "Mar 2010": 31.0
+      },
+      "Profit before tax": {
+        "Mar 2006": 191.0,
+        "Mar 2007": 195.0,
+        "Mar 2008": 306.0,
+        "Mar 2009": 349.0,
+        "Mar 2010": 500.0
+      },
+      "Tax %": {
+        "Mar 2006": null,
+        "Mar 2007": null,
+        "Mar 2008": null,
+        "Mar 2009": null,
+        "Mar 2010": null
+      },
+      "Net Profit+": {
+        "Mar 2006": 140.0,
+        "Mar 2007": 148.0,
+        "Mar 2008": 237.0,
+        "Mar 2009": 288.0,
+        "Mar 2010": 436.0
+      },
+      "EPS in Rs": {
+        "Mar 2006": 5.15,
+        "Mar 2007": 5.46,
+        "Mar 2008": 8.67,
+        "Mar 2009": 10.51,
+        "Mar 2010": 15.96
+      },
+      "Dividend Payout %": {
+        "Mar 2006": null,
+        "Mar 2007": null,
+        "Mar 2008": null,
+        "Mar 2009": null,
+        "Mar 2010": null
+      }
+    },
+    "balance_sheet": {
+      "Equity Capital": {
+        "Mar 2006": 136.0,
+        "Mar 2007": 136.0,
+        "Mar 2008": 14.0,
+        "Mar 2009": 14.0,
+        "Mar 2010": 14.0
+      },
+      "Reserves": {
+        "Mar 2006": 145.0,
+        "Mar 2007": 142.0,
+        "Mar 2008": 154.0,
+        "Mar 2009": 202.0,
+        "Mar 2010": 317.0
+      },
+      "Borrowings+": {
+        "Mar 2006": 4.0,
+        "Mar 2007": 4.0,
+        "Mar 2008": 5.0,
+        "Mar 2009": 5.0,
+        "Mar 2010": 5.0
+      },
+      "Other Liabilities+": {
+        "Mar 2006": 353.0,
+        "Mar 2007": 423.0,
+        "Mar 2008": 557.0,
+        "Mar 2009": 579.0,
+        "Mar 2010": 550.0
+      },
+      "Total Liabilities": {
+        "Mar 2006": 638.0,
+        "Mar 2007": 706.0,
+        "Mar 2008": 729.0,
+        "Mar 2009": 799.0,
+        "Mar 2010": 885.0
+      },
+      "Fixed Assets+": {
+        "Mar 2006": 164.0,
+        "Mar 2007": 168.0,
+        "Mar 2008": 210.0,
+        "Mar 2009": 249.0,
+        "Mar 2010": 254.0
+      },
+      "CWIP": {
+        "Mar 2006": 9.0,
+        "Mar 2007": 24.0,
+        "Mar 2008": 31.0,
+        "Mar 2009": 8.0,
+        "Mar 2010": 6.0
+      },
+      "Investments": {
+        "Mar 2006": 145.0,
+        "Mar 2007": 130.0,
+        "Mar 2008": 65.0,
+        "Mar 2009": 35.0,
+        "Mar 2010": 20.0
+      },
+      "Other Assets+": {
+        "Mar 2006": 319.0,
+        "Mar 2007": 383.0,
+        "Mar 2008": 424.0,
+        "Mar 2009": 507.0,
+        "Mar 2010": 604.0
+      },
+      "Total Assets": {
+        "Mar 2006": 638.0,
+        "Mar 2007": 706.0,
+        "Mar 2008": 729.0,
+        "Mar 2009": 799.0,
+        "Mar 2010": 885.0
+      }
+    },
+    "cash_flow": {
+      "Cash from Operating Activity+": {
+        "Mar 2006": 188.0,
+        "Mar 2007": 158.0,
+        "Mar 2008": 291.0,
+        "Mar 2009": 350.0,
+        "Mar 2010": 404.0
+      },
+      "Cash from Investing Activity+": {
+        "Mar 2006": -35.0,
+        "Mar 2007": 4.0,
+        "Mar 2008": 20.0,
+        "Mar 2009": 19.0,
+        "Mar 2010": 29.0
+      },
+      "Cash from Financing Activity+": {
+        "Mar 2006": -121.0,
+        "Mar 2007": -136.0,
+        "Mar 2008": -278.0,
+        "Mar 2009": -263.0,
+        "Mar 2010": -339.0
+      },
+      "Net Cash Flow": {
+        "Mar 2006": 32.0,
+        "Mar 2007": 26.0,
+        "Mar 2008": 33.0,
+        "Mar 2009": 105.0,
+        "Mar 2010": 94.0
+      }
+    },
+    "ratios": {
+      "Debtor Days": {
+        "Mar 2006": 2.0,
+        "Mar 2007": 3.0,
+        "Mar 2008": 2.0,
+        "Mar 2009": 2.0,
+        "Mar 2010": 2.0
+      },
+      "Inventory Days": {
+        "Mar 2006": 56.0,
+        "Mar 2007": 51.0,
+        "Mar 2008": 53.0,
+        "Mar 2009": 48.0,
+        "Mar 2010": 54.0
+      },
+      "Days Payable": {
+        "Mar 2006": 176.0,
+        "Mar 2007": 174.0,
+        "Mar 2008": 187.0,
+        "Mar 2009": 193.0,
+        "Mar 2010": 177.0
+      },
+      "Cash Conversion Cycle": {
+        "Mar 2006": -119.0,
+        "Mar 2007": -120.0,
+        "Mar 2008": -132.0,
+        "Mar 2009": -143.0,
+        "Mar 2010": -122.0
+      },
+      "Working Capital Days": {
+        "Mar 2006": -42.0,
+        "Mar 2007": -51.0,
+        "Mar 2008": -76.0,
+        "Mar 2009": -72.0,
+        "Mar 2010": -58.0
+      },
+      "ROCE %": {
+        "Mar 2006": null,
+        "Mar 2007": null,
+        "Mar 2008": null,
+        "Mar 2009": null,
+        "Mar 2010": null
+      }
+    }
+  },
+  "narrative": null
+}

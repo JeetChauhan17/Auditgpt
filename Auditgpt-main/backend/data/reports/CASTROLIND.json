@@ -1,0 +1,64 @@
+{
+  "company_id": "CASTROLIND",
+  "company_name": "Castrol India",
+  "sector": "Oil & Gas",
+  "composite_score": 0,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": null,
+    "manipulation_likely": false,
+    "components": {}
+  },
+  "altman": {
+    "z_score": null,
+    "zone": "unknown",
+    "components": {}
+  },
+  "anomaly_map": {},
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {},
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Reliance Industries",
+      "sector": "Oil & Gas",
+      "composite_score": 23.67,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "ONGC",
+      "sector": "Oil & Gas",
+      "composite_score": 22.12,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Indian Oil Corporation",
+      "sector": "Oil & Gas",
+      "composite_score": 25.37,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Bharat Petroleum",
+      "sector": "Oil & Gas",
+      "composite_score": 16.54,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "GAIL India",
+      "sector": "Oil & Gas",
+      "composite_score": 19.62,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {},
+    "balance_sheet": {},
+    "cash_flow": {},
+    "ratios": {}
+  },
+  "narrative": null
+}

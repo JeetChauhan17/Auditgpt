@@ -1,0 +1,64 @@
+{
+  "company_id": "RELAXO",
+  "company_name": "Relaxo Footwears",
+  "sector": "Consumer Durables",
+  "composite_score": 0,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": null,
+    "manipulation_likely": false,
+    "components": {}
+  },
+  "altman": {
+    "z_score": null,
+    "zone": "unknown",
+    "components": {}
+  },
+  "anomaly_map": {},
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {},
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Titan Company",
+      "sector": "Consumer Durables",
+      "composite_score": 19.11,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Asian Paints",
+      "sector": "Consumer Durables",
+      "composite_score": 6.72,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Polycab India",
+      "sector": "Consumer Durables",
+      "composite_score": 12.13,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Havells India",
+      "sector": "Consumer Durables",
+      "composite_score": 9.37,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Dixon Technologies",
+      "sector": "Consumer Durables",
+      "composite_score": 22.6,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {},
+    "balance_sheet": {},
+    "cash_flow": {},
+    "ratios": {}
+  },
+  "narrative": null
+}

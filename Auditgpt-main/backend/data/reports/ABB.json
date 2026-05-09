@@ -1,0 +1,260 @@
+{
+  "company_id": "ABB",
+  "company_name": "ABB India",
+  "sector": "Industrial",
+  "composite_score": 0,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": null,
+    "manipulation_likely": false,
+    "components": {}
+  },
+  "altman": {
+    "z_score": null,
+    "zone": "unknown",
+    "components": {}
+  },
+  "anomaly_map": {},
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {},
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Cummins India",
+      "sector": "Industrial",
+      "composite_score": 12.33,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Siemens",
+      "sector": "Industrial",
+      "composite_score": 0,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "BHEL",
+      "sector": "Industrial",
+      "composite_score": 26.48,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Thermax",
+      "sector": "Industrial",
+      "composite_score": 9.44,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Grindwell Norton",
+      "sector": "Industrial",
+      "composite_score": 9.0,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {
+      "Sales+": {
+        "Dec 2011": 7449.0,
+        "Dec 2012": 7608.0,
+        "Dec 2024": 12188.0,
+        "Dec 2025": 13203.0
+      },
+      "Expenses+": {
+        "Dec 2011": 7093.0,
+        "Dec 2012": 7253.0,
+        "Dec 2024": 9883.0,
+        "Dec 2025": 11160.0
+      },
+      "Operating Profit": {
+        "Dec 2011": 356.0,
+        "Dec 2012": 355.0,
+        "Dec 2024": 2305.0,
+        "Dec 2025": 2043.0
+      },
+      "OPM %": {
+        "Dec 2011": null,
+        "Dec 2012": null,
+        "Dec 2024": null,
+        "Dec 2025": null
+      },
+      "Other Income+": {
+        "Dec 2011": 38.0,
+        "Dec 2012": 7.0,
+        "Dec 2024": 350.0,
+        "Dec 2025": 351.0
+      },
+      "Interest": {
+        "Dec 2011": 46.0,
+        "Dec 2012": 57.0,
+        "Dec 2024": 16.0,
+        "Dec 2025": 20.0
+      },
+      "Depreciation": {
+        "Dec 2011": 80.0,
+        "Dec 2012": 94.0,
+        "Dec 2024": 129.0,
+        "Dec 2025": 146.0
+      },
+      "Profit before tax": {
+        "Dec 2011": 268.0,
+        "Dec 2012": 211.0,
+        "Dec 2024": 2510.0,
+        "Dec 2025": 2229.0
+      },
+      "Tax %": {
+        "Dec 2011": null,
+        "Dec 2012": null,
+        "Dec 2024": null,
+        "Dec 2025": null
+      },
+      "Net Profit+": {
+        "Dec 2011": 185.0,
+        "Dec 2012": 141.0,
+        "Dec 2024": 1872.0,
+        "Dec 2025": 1668.0
+      },
+      "EPS in Rs": {
+        "Dec 2011": 8.72,
+        "Dec 2012": 6.65,
+        "Dec 2024": 88.33,
+        "Dec 2025": 78.73
+      },
+      "Dividend Payout %": {
+        "Dec 2011": null,
+        "Dec 2012": null,
+        "Dec 2024": null,
+        "Dec 2025": null
+      }
+    },
+    "balance_sheet": {
+      "Equity Capital": {
+        "Dec 2011": 42.0,
+        "Dec 2012": 42.0,
+        "Dec 2024": 42.0,
+        "Dec 2025": 42.0
+      },
+      "Reserves": {
+        "Dec 2011": 2492.0,
+        "Dec 2012": 2559.0,
+        "Dec 2024": 7033.0,
+        "Dec 2025": 7794.0
+      },
+      "Borrowings+": {
+        "Dec 2011": 0.0,
+        "Dec 2012": 328.0,
+        "Dec 2024": 52.0,
+        "Dec 2025": 85.0
+      },
+      "Other Liabilities+": {
+        "Dec 2011": 3784.0,
+        "Dec 2012": 3575.0,
+        "Dec 2024": 5264.0,
+        "Dec 2025": 5718.0
+      },
+      "Total Liabilities": {
+        "Dec 2011": 6319.0,
+        "Dec 2012": 6504.0,
+        "Dec 2024": 12391.0,
+        "Dec 2025": 13638.0
+      },
+      "Fixed Assets+": {
+        "Dec 2011": 1195.0,
+        "Dec 2012": 1234.0,
+        "Dec 2024": 1062.0,
+        "Dec 2025": 1195.0
+      },
+      "CWIP": {
+        "Dec 2011": 74.0,
+        "Dec 2012": 117.0,
+        "Dec 2024": 95.0,
+        "Dec 2025": 116.0
+      },
+      "Investments": {
+        "Dec 2011": 17.0,
+        "Dec 2012": 17.0,
+        "Dec 2024": 2.0,
+        "Dec 2025": 2.0
+      },
+      "Other Assets+": {
+        "Dec 2011": 5033.0,
+        "Dec 2012": 5137.0,
+        "Dec 2024": 11233.0,
+        "Dec 2025": 12326.0
+      },
+      "Total Assets": {
+        "Dec 2011": 6319.0,
+        "Dec 2012": 6504.0,
+        "Dec 2024": 12391.0,
+        "Dec 2025": 13638.0
+      }
+    },
+    "cash_flow": {
+      "Cash from Operating Activity+": {
+        "Dec 2011": 120.0,
+        "Dec 2012": -44.0,
+        "Dec 2024": 1332.0,
+        "Dec 2025": 1220.0
+      },
+      "Cash from Investing Activity+": {
+        "Dec 2011": -361.0,
+        "Dec 2012": -340.0,
+        "Dec 2024": -503.0,
+        "Dec 2025": 363.0
+      },
+      "Cash from Financing Activity+": {
+        "Dec 2011": -80.0,
+        "Dec 2012": 210.0,
+        "Dec 2024": -770.0,
+        "Dec 2025": -966.0
+      },
+      "Net Cash Flow": {
+        "Dec 2011": -321.0,
+        "Dec 2012": -173.0,
+        "Dec 2024": 58.0,
+        "Dec 2025": 617.0
+      }
+    },
+    "ratios": {
+      "Debtor Days": {
+        "Dec 2011": 152.0,
+        "Dec 2012": 157.0,
+        "Dec 2024": 89.0,
+        "Dec 2025": 88.0
+      },
+      "Inventory Days": {
+        "Dec 2011": 69.0,
+        "Dec 2012": 68.0,
+        "Dec 2024": 96.0,
+        "Dec 2025": 98.0
+      },
+      "Days Payable": {
+        "Dec 2011": 146.0,
+        "Dec 2012": 141.0,
+        "Dec 2024": 173.0,
+        "Dec 2025": 165.0
+      },
+      "Cash Conversion Cycle": {
+        "Dec 2011": 75.0,
+        "Dec 2012": 84.0,
+        "Dec 2024": 13.0,
+        "Dec 2025": 21.0
+      },
+      "Working Capital Days": {
+        "Dec 2011": 39.0,
+        "Dec 2012": 43.0,
+        "Dec 2024": -1.0,
+        "Dec 2025": 5.0
+      },
+      "ROCE %": {
+        "Dec 2011": null,
+        "Dec 2012": null,
+        "Dec 2024": null,
+        "Dec 2025": null
+      }
+    }
+  },
+  "narrative": null
+}

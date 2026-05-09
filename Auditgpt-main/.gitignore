@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Data cache (large files)
+backend/data/companies/*.json
+backend/data/auditor_notes/*.json
+backend/data/rpt/*.json
+backend/data/sector_summary.json
+backend/data/industry_mapping.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Firebase
+firebase-debug.log
+
+# Misc
+*.log
+.vercel

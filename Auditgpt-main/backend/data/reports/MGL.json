@@ -1,0 +1,331 @@
+{
+  "company_id": "MGL",
+  "company_name": "Mahanagar Gas",
+  "sector": "Oil & Gas",
+  "composite_score": 11.77,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": -2.3965,
+    "manipulation_likely": false,
+    "components": {
+      "DSRI": 1.0588,
+      "GMI": 1.3573,
+      "AQI": 1.0052,
+      "SGI": 1.1548,
+      "DEPI": 0.908,
+      "SGAI": null,
+      "LVGI": 1.2502,
+      "TATA": -0.0443
+    }
+  },
+  "altman": {
+    "z_score": 4.7704,
+    "zone": "safe",
+    "components": {
+      "X1_working_capital_ta": 0,
+      "X2_retained_earnings_ta": 0.699,
+      "X3_ebit_ta": 0.1897,
+      "X4_market_cap_tl": 3.8121,
+      "X5_revenue_ta": 0.8784
+    }
+  },
+  "anomaly_map": {
+    "OPM": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "NPM": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "ROE": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "ROCE": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Debt to equity": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Current Ratio": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Interest Coverage Ratio": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Debtor Days": {
+      "Mar 2023": 0.4816,
+      "Mar 2024": 0.4767,
+      "Mar 2025": 0.5566
+    },
+    "Inventory Turnover": {
+      "Mar 2023": -1.2814,
+      "Mar 2024": -1.3267,
+      "Mar 2025": -1.308
+    },
+    "Asset Turnover": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Dividend Payout": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Earnings Per Share": {
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    }
+  },
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {
+    "beneish_normalized": 12.07,
+    "altman_normalized": 0,
+    "industry_z_normalized": 30.17,
+    "trend_break_normalized": 0.0
+  },
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Reliance Industries",
+      "sector": "Oil & Gas",
+      "composite_score": 23.67,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "ONGC",
+      "sector": "Oil & Gas",
+      "composite_score": 22.12,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Indian Oil Corporation",
+      "sector": "Oil & Gas",
+      "composite_score": 25.37,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "Bharat Petroleum",
+      "sector": "Oil & Gas",
+      "composite_score": 16.54,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "GAIL India",
+      "sector": "Oil & Gas",
+      "composite_score": 19.62,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {
+      "Sales+": {
+        "Mar 2023": 6299.0,
+        "Mar 2024": 6290.0,
+        "Mar 2025": 7264.0,
+        "TTM": 8158.0
+      },
+      "Expenses+": {
+        "Mar 2023": 5115.0,
+        "Mar 2024": 4446.0,
+        "Mar 2025": 5695.0,
+        "TTM": 6577.0
+      },
+      "Operating Profit": {
+        "Mar 2023": 1184.0,
+        "Mar 2024": 1844.0,
+        "Mar 2025": 1569.0,
+        "TTM": 1581.0
+      },
+      "OPM %": {
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      },
+      "Other Income+": {
+        "Mar 2023": 112.0,
+        "Mar 2024": 175.0,
+        "Mar 2025": 167.0,
+        "TTM": 133.0
+      },
+      "Interest": {
+        "Mar 2023": 9.0,
+        "Mar 2024": 13.0,
+        "Mar 2025": 14.0,
+        "TTM": 20.0
+      },
+      "Depreciation": {
+        "Mar 2023": 231.0,
+        "Mar 2024": 277.0,
+        "Mar 2025": 352.0,
+        "TTM": 396.0
+      },
+      "Profit before tax": {
+        "Mar 2023": 1056.0,
+        "Mar 2024": 1728.0,
+        "Mar 2025": 1370.0,
+        "TTM": 1298.0
+      },
+      "Tax %": {
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      },
+      "Net Profit+": {
+        "Mar 2023": 790.0,
+        "Mar 2024": 1285.0,
+        "Mar 2025": 1040.0,
+        "TTM": 958.0
+      },
+      "EPS in Rs": {
+        "Mar 2023": 79.98,
+        "Mar 2024": 130.06,
+        "Mar 2025": 105.34,
+        "TTM": 97.0
+      },
+      "Dividend Payout %": {
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      }
+    },
+    "balance_sheet": {
+      "Equity Capital": {
+        "Mar 2023": 99.0,
+        "Mar 2024": 99.0,
+        "Mar 2025": 99.0,
+        "Sep 2025": 99.0
+      },
+      "Reserves": {
+        "Mar 2023": 4035.0,
+        "Mar 2024": 5040.0,
+        "Mar 2025": 5781.0,
+        "Sep 2025": 6110.0
+      },
+      "Borrowings+": {
+        "Mar 2023": 115.0,
+        "Mar 2024": 141.0,
+        "Mar 2025": 201.0,
+        "Sep 2025": 221.0
+      },
+      "Other Liabilities+": {
+        "Mar 2023": 1783.0,
+        "Mar 2024": 1974.0,
+        "Mar 2025": 2189.0,
+        "Sep 2025": 2235.0
+      },
+      "Total Liabilities": {
+        "Mar 2023": 6032.0,
+        "Mar 2024": 7253.0,
+        "Mar 2025": 8270.0,
+        "Sep 2025": 8665.0
+      },
+      "Fixed Assets+": {
+        "Mar 2023": 3026.0,
+        "Mar 2024": 4235.0,
+        "Mar 2025": 4854.0,
+        "Sep 2025": 5033.0
+      },
+      "CWIP": {
+        "Mar 2023": 709.0,
+        "Mar 2024": 823.0,
+        "Mar 2025": 1068.0,
+        "Sep 2025": 1172.0
+      },
+      "Investments": {
+        "Mar 2023": 1310.0,
+        "Mar 2024": 1069.0,
+        "Mar 2025": 1162.0,
+        "Sep 2025": 1218.0
+      },
+      "Other Assets+": {
+        "Mar 2023": 988.0,
+        "Mar 2024": 1126.0,
+        "Mar 2025": 1186.0,
+        "Sep 2025": 1242.0
+      },
+      "Total Assets": {
+        "Mar 2023": 6032.0,
+        "Mar 2024": 7253.0,
+        "Mar 2025": 8270.0,
+        "Sep 2025": 8665.0
+      }
+    },
+    "cash_flow": {
+      "Cash from Operating Activity+": {
+        "Mar 2023": 969.0,
+        "Mar 2024": 1568.0,
+        "Mar 2025": 1406.0
+      },
+      "Cash from Investing Activity+": {
+        "Mar 2023": -649.0,
+        "Mar 2024": -1057.0,
+        "Mar 2025": -1052.0
+      },
+      "Cash from Financing Activity+": {
+        "Mar 2023": -285.0,
+        "Mar 2024": -499.0,
+        "Mar 2025": -332.0
+      },
+      "Net Cash Flow": {
+        "Mar 2023": 35.0,
+        "Mar 2024": 11.0,
+        "Mar 2025": 22.0
+      }
+    },
+    "ratios": {
+      "Debtor Days": {
+        "Mar 2023": 17.0,
+        "Mar 2024": 17.0,
+        "Mar 2025": 18.0
+      },
+      "Inventory Days": {
+        "Mar 2023": 3.0,
+        "Mar 2024": 4.0,
+        "Mar 2025": 4.0
+      },
+      "Days Payable": {
+        "Mar 2023": 26.0,
+        "Mar 2024": 35.0,
+        "Mar 2025": 34.0
+      },
+      "Cash Conversion Cycle": {
+        "Mar 2023": -7.0,
+        "Mar 2024": -13.0,
+        "Mar 2025": -11.0
+      },
+      "Working Capital Days": {
+        "Mar 2023": -63.0,
+        "Mar 2024": -72.0,
+        "Mar 2025": -66.0
+      },
+      "ROCE %": {
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null
+      }
+    }
+  },
+  "narrative": null
+}

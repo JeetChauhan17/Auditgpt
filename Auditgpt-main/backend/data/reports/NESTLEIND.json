@@ -1,0 +1,321 @@
+{
+  "company_id": "NESTLEIND",
+  "company_name": "Nestle India",
+  "sector": "FMCG",
+  "composite_score": 10.2,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": -2.5187,
+    "manipulation_likely": false,
+    "components": {
+      "DSRI": null,
+      "GMI": 1.0194,
+      "AQI": null,
+      "SGI": 0.8282,
+      "DEPI": null,
+      "SGAI": null,
+      "LVGI": null,
+      "TATA": 0.0223
+    }
+  },
+  "altman": {
+    "z_score": 20.1202,
+    "zone": "safe",
+    "components": {
+      "X1_working_capital_ta": 0,
+      "X2_retained_earnings_ta": 0.321,
+      "X3_ebit_ta": 0.3893,
+      "X4_market_cap_tl": 27.882,
+      "X5_revenue_ta": 1.6569
+    }
+  },
+  "anomaly_map": {
+    "OPM": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "NPM": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "ROE": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "ROCE": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "Debt to equity": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "Current Ratio": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "Interest Coverage Ratio": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "Debtor Days": {
+      "Mar 2024": -1.354,
+      "Mar 202415m": null,
+      "Mar 2025": -1.1898
+    },
+    "Inventory Turnover": {
+      "Mar 2024": -0.3214,
+      "Mar 202415m": null,
+      "Mar 2025": 0.4158
+    },
+    "Asset Turnover": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "Dividend Payout": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    },
+    "Earnings Per Share": {
+      "Mar 2024": null,
+      "Mar 202415m": null,
+      "Mar 2025": null
+    }
+  },
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {
+    "beneish_normalized": 9.63,
+    "altman_normalized": 0,
+    "industry_z_normalized": 27.34,
+    "trend_break_normalized": 0.0
+  },
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Hindustan Unilever",
+      "sector": "FMCG",
+      "composite_score": 10.17,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "ITC",
+      "sector": "FMCG",
+      "composite_score": 16.98,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Britannia Industries",
+      "sector": "FMCG",
+      "composite_score": 12.77,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Varun Beverages",
+      "sector": "FMCG",
+      "composite_score": 0,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Tata Consumer Products",
+      "sector": "FMCG",
+      "composite_score": 10.45,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {
+      "Sales+": {
+        "Dec 2023": 19126.0,
+        "Mar 202415m": 24394.0,
+        "Mar 2025": 20202.0,
+        "TTM": 21911.0
+      },
+      "Expenses+": {
+        "Dec 2023": 14655.0,
+        "Mar 202415m": 18551.0,
+        "Mar 2025": 15454.0,
+        "TTM": 17037.0
+      },
+      "Operating Profit": {
+        "Dec 2023": 4471.0,
+        "Mar 202415m": 5843.0,
+        "Mar 2025": 4747.0,
+        "TTM": 4873.0
+      },
+      "OPM %": {
+        "Dec 2023": null,
+        "Mar 202415m": null,
+        "Mar 2025": null,
+        "TTM": null
+      },
+      "Other Income+": {
+        "Dec 2023": 116.0,
+        "Mar 202415m": 159.0,
+        "Mar 2025": 245.0,
+        "TTM": 183.0
+      },
+      "Interest": {
+        "Dec 2023": 119.0,
+        "Mar 202415m": 145.0,
+        "Mar 2025": 136.0,
+        "TTM": 159.0
+      },
+      "Depreciation": {
+        "Dec 2023": 429.0,
+        "Mar 202415m": 568.0,
+        "Mar 2025": 540.0,
+        "TTM": 650.0
+      },
+      "Profit before tax": {
+        "Dec 2023": 4038.0,
+        "Mar 202415m": 5289.0,
+        "Mar 2025": 4316.0,
+        "TTM": 4247.0
+      },
+      "Tax %": {
+        "Dec 2023": null,
+        "Mar 202415m": null,
+        "Mar 2025": null,
+        "TTM": null
+      },
+      "Net Profit+": {
+        "Dec 2023": 2999.0,
+        "Mar 202415m": 3933.0,
+        "Mar 2025": 3208.0,
+        "TTM": 3262.0
+      },
+      "EPS in Rs": {
+        "Dec 2023": 15.55,
+        "Mar 202415m": 20.4,
+        "Mar 2025": 16.63,
+        "TTM": 16.91
+      },
+      "Dividend Payout %": {
+        "Dec 2023": null,
+        "Mar 202415m": null,
+        "Mar 2025": null,
+        "TTM": null
+      }
+    },
+    "balance_sheet": {
+      "Equity Capital": {
+        "Mar 2024": 96.0,
+        "Mar 2025": 96.0,
+        "Sep 2025": 193.0
+      },
+      "Reserves": {
+        "Mar 2024": 3244.0,
+        "Mar 2025": 3914.0,
+        "Sep 2025": 4242.0
+      },
+      "Borrowings+": {
+        "Mar 2024": 345.0,
+        "Mar 2025": 1167.0,
+        "Sep 2025": 477.0
+      },
+      "Other Liabilities+": {
+        "Mar 2024": 6838.0,
+        "Mar 2025": 7016.0,
+        "Sep 2025": 7181.0
+      },
+      "Total Liabilities": {
+        "Mar 2024": 10523.0,
+        "Mar 2025": 12193.0,
+        "Sep 2025": 12092.0
+      },
+      "Fixed Assets+": {
+        "Mar 2024": 3460.0,
+        "Mar 2025": 5474.0,
+        "Sep 2025": 5819.0
+      },
+      "CWIP": {
+        "Mar 2024": 1742.0,
+        "Mar 2025": 1173.0,
+        "Sep 2025": 929.0
+      },
+      "Investments": {
+        "Mar 2024": 464.0,
+        "Mar 2025": 575.0,
+        "Sep 2025": 553.0
+      },
+      "Other Assets+": {
+        "Mar 2024": 4857.0,
+        "Mar 2025": 4972.0,
+        "Sep 2025": 4791.0
+      },
+      "Total Assets": {
+        "Mar 2024": 10523.0,
+        "Mar 2025": 12193.0,
+        "Sep 2025": 12092.0
+      }
+    },
+    "cash_flow": {
+      "Cash from Operating Activity+": {
+        "Dec 2023": null,
+        "Mar 2024": 4175.0,
+        "Mar 2025": 2936.0
+      },
+      "Cash from Investing Activity+": {
+        "Dec 2023": null,
+        "Mar 2024": -1237.0,
+        "Mar 2025": -1811.0
+      },
+      "Cash from Financing Activity+": {
+        "Dec 2023": null,
+        "Mar 2024": -3135.0,
+        "Mar 2025": -1848.0
+      },
+      "Net Cash Flow": {
+        "Dec 2023": null,
+        "Mar 2024": -198.0,
+        "Mar 2025": -723.0
+      }
+    },
+    "ratios": {
+      "Debtor Days": {
+        "Dec 2023": null,
+        "Mar 2024": 4.0,
+        "Mar 2025": 7.0
+      },
+      "Inventory Days": {
+        "Dec 2023": null,
+        "Mar 2024": 83.0,
+        "Mar 2025": 139.0
+      },
+      "Days Payable": {
+        "Dec 2023": null,
+        "Mar 2024": 112.0,
+        "Mar 2025": 128.0
+      },
+      "Cash Conversion Cycle": {
+        "Dec 2023": null,
+        "Mar 2024": -24.0,
+        "Mar 2025": 18.0
+      },
+      "Working Capital Days": {
+        "Dec 2023": null,
+        "Mar 2024": -19.0,
+        "Mar 2025": -19.0
+      },
+      "ROCE %": {
+        "Dec 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null
+      }
+    }
+  },
+  "narrative": null
+}

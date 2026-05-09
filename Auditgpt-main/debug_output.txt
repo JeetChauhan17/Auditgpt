@@ -1,0 +1,499 @@
+=== GREP OUTPUT ===
+
+=== GIT DIFF ===
+diff --git a/backend/api/routes.py b/backend/api/routes.py
+index 113c73c..8d3d72a 100644
+--- a/backend/api/routes.py
++++ b/backend/api/routes.py
+@@ -1,167 +1,3 @@
+-# import json
+-# import os
+-
+-# from fastapi import APIRouter, HTTPException
+-# from fastapi.responses import StreamingResponse
+-
+-# from backend.llm.client import generate_narrative_stream
+-
+-# router = APIRouter()
+-
+-# DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+-# REPORTS_DIR = os.path.join(DATA_DIR, "reports")
+-# SECTOR_SUMMARY_FILE = os.path.join(DATA_DIR, "sector_summary.json")
+-
+-
+-# def _load_json(path: str):
+-#     if not os.path.exists(path):
+-#         return None
+-#     with open(path) as f:
+-#         return json.load(f)
+-
+-
+-# def _load_all_reports() -> list[dict]:
+-#     """Load all pre-computed report JSON files."""
+-#     reports = []
+-#     if not os.path.exists(REPORTS_DIR):
+-#         return reports
+-#     for fname in os.listdir(REPORTS_DIR):
+-#         if fname.endswith(".json"):
+-#             with open(os.path.join(REPORTS_DIR, fname)) as f:
+-#                 reports.append(json.load(f))
+-#     return reports
+-
+-
+-# @router.get("/sectors")
+-# def get_sectors():
+-#     """Return sector summary with average risk scores."""
+-#     data = _load_json(SECTOR_SUMMARY_FILE)
+-#     if data is None:
+-#         return []
+-#     return data
+-
+-
+-# @router.get("/search")
+-# def search_companies(q: str = ""):
+-#     """Fuzzy search for company names. Returns top 10 matches."""
+-#     if len(q) < 2:
+-#         return []
+-
+-#     query = q.lower()
+-#     reports = _load_all_reports()
+-#     results = []
+-
+-#     for r in reports:
+-#         name = r.get("company_name", "").lower()
+-#         cid = r.get("company_id", "").lower()
+-#         sector = r.get("sector", "").lower()
+-
+-#         # Match against name, id, or sector
+-#         if query in name or query in cid or query in sector:
+-#             # Score: exact prefix match scores highest
+-#             score = 0
+-#             if name.startswith(query):
+-#                 score = 3
+-#             elif cid.startswith(query):
+-#                 score = 2
+-#             elif query in name:
+-#                 score = 1
+-
+-#             results.append({
+-#                 "company_id": r["company_id"],
+-#                 "company_name": r["company_name"],
+-#                 "sector": r.get("sector", ""),
+-#                 "composite_score": r.get("composite_score"),
+-#                 "_score": score,
+-#             })
+-
+-#     results.sort(key=lambda x: (-x["_score"], x["company_name"]))
+-#     # Remove internal score field
+-#     for r in results:
+-#         del r["_score"]
+-
+-#     return results[:10]
+-
+-
+-# @router.get("/report/{company_id}")
+-# def get_report(company_id: str):
+-#     """Return full ForensicReport for a company."""
+-#     report_path = os.path.join(REPORTS_DIR, f"{company_id}.json")
+-#     report = _load_json(report_path)
+-
+-#     if report is None:
+-#         # Try case-insensitive match
+-#         if os.path.exists(REPORTS_DIR):
+-#             for fname in os.listdir(REPORTS_DIR):
+-#                 if fname.lower() == f"{company_id.lower()}.json":
+-#                     report = _load_json(os.path.join(REPORTS_DIR, fname))
+-#                     break
+-
+-#     if report is None:
+-#         # Return 404 with peer suggestions
+-#         reports = _load_all_reports()
+-#         suggestions = [
+-#             {"company_id": r["company_id"], "company_name": r["company_name"]}
+-#             for r in reports[:5]
+-#         ]
+-#         raise HTTPException(
+-#             status_code=404,
+-#             detail={"message": "Company not found", "suggestions": suggestions},
+-#         )
+-
+-#     return report
+-
+-
+-# @router.get("/stream/{company_id}")
+-# def stream_narrative(company_id: str):
+-#     """SSE stream of LLM narrative for a company."""
+-#     report_path = os.path.join(REPORTS_DIR, f"{company_id}.json")
+-#     report = _load_json(report_path)
+-
+-#     if report is None:
+-#         raise HTTPException(status_code=404, detail="Company not found")
+-
+-#     # If narrative is already cached, stream it character by character
+-#     cached_narrative = report.get("narrative")
+-#     if cached_narrative:
+-#         def stream_cached():
+-#             # Stream in chunks of ~50 chars for realistic feel
+-#             for i in range(0, len(cached_narrative), 50):
+-#                 chunk = cached_narrative[i:i + 50]
+-#                 yield f"data: {chunk}\n\n"
+-#             yield "data: [DONE]\n\n"
+-
+-#         return StreamingResponse(
+-#             stream_cached(),
+-#             media_type="text/event-stream",
+-#             headers={"Cache-Control": "no-cache", "Connection": "keep-alive"},
+-#         )
+-
+-#     # Live generation from Gemini
+-#     company_path = os.path.join(DATA_DIR, "companies", f"{company_id}.json")
+-#     company_data = _load_json(company_path)
+-#     if not company_data:
+-#         raise HTTPException(status_code=404, detail="Company data not found")
+-
+-#     scores = {
+-#         "composite_score": report.get("composite_score", 0),
+-#         "risk_level": report.get("risk_level", "Unknown"),
+-#         "beneish": report.get("beneish", {}),
+-#         "altman": report.get("altman", {}),
+-#         "red_flags": report.get("red_flags", []),
+-#         "breakdown": report.get("breakdown", {}),
+-#     }
+-
+-#     def stream_live():
+-#         for chunk in generate_narrative_stream(company_data, scores):
+-#             yield f"data: {chunk}\n\n"
+-#         yield "data: [DONE]\n\n"
+-
+-#     return StreamingResponse(
+-#         stream_live(),
+-#         media_type="text/event-stream",
+-#         headers={"Cache-Control": "no-cache", "Connection": "keep-alive"},
+-#     )
+ import json
+ import os
+ from functools import lru_cache
+@@ -169,8 +5,6 @@ from functools import lru_cache
+ from fastapi import APIRouter, HTTPException
+ from fastapi.responses import StreamingResponse
+ 
+-# from backend.llm.client import generate_narrative_stream
+-
+ try:
+     from backend.llm.client import generate_narrative_stream
+ except Exception as e:
+@@ -179,10 +13,10 @@ except Exception as e:
+ 
+ router = APIRouter()
+ 
+-DATA_DIR     = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+-REPORTS_DIR  = os.path.join(DATA_DIR, "reports")
++DATA_DIR      = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
++REPORTS_DIR   = os.path.join(DATA_DIR, "reports")
+ COMPANIES_DIR = os.path.join(DATA_DIR, "companies")
+-SECTOR_FILE  = os.path.join(DATA_DIR, "sector_summary.json")
++SECTOR_FILE   = os.path.join(DATA_DIR, "sector_summary.json")
+ 
+ 
+ # ── Internal helpers ──────────────────────────────────────────────────────────
+@@ -194,53 +28,27 @@ def _load_json(path: str):
+         return json.load(f)
+ 
+ 
+-def _get_all_reports() -> dict[str, dict]:
+-    """
+-    Load all pre-computed reports into a dict keyed by company_id.
+-    Cached in-memory — call _invalidate_cache() if reports are regenerated at runtime.
+-    """
+-    return _reports_cache()
+-
+-
+-# @lru_cache(maxsize=1)
+-# def _reports_cache() -> dict[str, dict]:
+-#     reports = {}
+-#     if not os.path.exists(REPORTS_DIR):
+-#         return reports
+-#     for fname in os.listdir(REPORTS_DIR):
+-#         if fname.endswith(".json"):
+-#             data = _load_json(os.path.join(REPORTS_DIR, fname))
+-#             if data and "company_id" in data:
+-#                 reports[data["company_id"]] = data
+-#     return reports
+ @lru_cache(maxsize=1)
+ def _reports_cache() -> dict[str, dict]:
+     reports = {}
+-
+     if not os.path.exists(REPORTS_DIR):
+         return reports
+-
+-    files = os.listdir(REPORTS_DIR)
+-
+-    # ✅ ADD THIS LINE HERE
+-    if len(files) > 200:
+-        raise Exception("Too many files for Vercel serverless")
+-
+-    for fname in files:
++    for fname in os.listdir(REPORTS_DIR):
+         if fname.endswith(".json"):
+             data = _load_json(os.path.join(REPORTS_DIR, fname))
+             if data and "company_id" in data:
+                 reports[data["company_id"]] = data
+-
+     return reports
+ 
++
++def _get_all_reports() -> dict[str, dict]:
++    return _reports_cache()
++
++
+ def _find_report(company_id: str) -> dict | None:
+-    """Case-insensitive report lookup."""
+     reports = _get_all_reports()
+-    # Exact match first
+     if company_id in reports:
+         return reports[company_id]
+-    # Case-insensitive fallback
+     lower = company_id.lower()
+     for cid, report in reports.items():
+         if cid.lower() == lower:
+@@ -249,7 +57,6 @@ def _find_report(company_id: str) -> dict | None:
+ 
+ 
+ def _build_peer_companies(company_id: str, sector: str, limit: int = 5) -> list[dict]:
+-    """Return top peers by composite score from the same sector."""
+     reports = _get_all_reports()
+     peers = [
+         {
+@@ -265,17 +72,28 @@ def _build_peer_companies(company_id: str, sector: str, limit: int = 5) -> list[
+     return peers[:limit]
+ 
+ 
++def _build_risk_reasoning(report: dict, beneish: dict, altman: dict, breakdown: dict) -> str:
++    parts = []
++    m = beneish.get("m_score")
++    z = altman.get("z_score")
++    if m is not None:
++        flag = "above manipulation threshold" if beneish.get("manipulation_likely") else "below manipulation threshold"
++        parts.append(f"Beneish M-Score of {m:.2f} ({flag})")
++    if z is not None:
++        zone = altman.get("zone", "unknown")
++        parts.append(f"Altman Z-Score of {z:.2f} ({zone} zone)")
++    n_flags = len(report.get("red_flags", []))
++    if n_flags:
++        parts.append(f"{n_flags} red flag{'s' if n_flags > 1 else ''} detected")
++    if not parts:
++        return "Insufficient data for detailed reasoning."
++    return ". ".join(parts) + "."
++
++
+ def _build_full_report(report: dict, company_id: str) -> dict:
+-    """
+-    Enrich a pre-computed score report with fields required by ForensicReport schema:
+-    peer_companies, financial_data, sentiment_trend, risk_reasoning.
+-    """
+     sector = report.get("sector", "")
+-
+-    # Peer companies
+     peer_companies = _build_peer_companies(company_id, sector)
+ 
+-    # Raw financial data for frontend charts (P&L, balance sheet, cash flow, ratios)
+     company_raw = _load_json(os.path.join(COMPANIES_DIR, f"{company_id}.json")) or {}
+     financial_data = {
+         "profit_loss":   company_raw.get("profit_loss", {}),
+@@ -284,75 +102,44 @@ def _build_full_report(report: dict, company_id: str) -> dict:
+         "ratios":        company_raw.get("ratios", {}),
+     }
+ 
+-    # Sentiment trend — load from pre-computed if available, else empty
+     sentiment_raw = _load_json(
+         os.path.join(DATA_DIR, "reports", f"{company_id}_sentiment.json")
+     ) or {}
+     sentiment_trend = sentiment_raw.get("sentiment_trend", {})
+ 
+-    # RPT data
+     rpt_raw = _load_json(os.path.join(DATA_DIR, "rpt", f"{company_id}.json"))
+-    rpt_data = rpt_raw if rpt_raw else None
+-
+-    # Auditor notes
+     auditor_raw = _load_json(
+         os.path.join(DATA_DIR, "auditor_notes", f"{company_id}.json")
+     ) or {}
+ 
+-    # Human-readable risk reasoning from score breakdown
+     breakdown = report.get("breakdown", {})
+-    beneish = report.get("beneish", {})
+-    altman  = report.get("altman", {})
++    beneish   = report.get("beneish", {})
++    altman    = report.get("altman", {})
+     risk_reasoning = _build_risk_reasoning(report, beneish, altman, breakdown)
+ 
+     return {
+         **report,
+-        "peer_companies":  peer_companies,
+-        "financial_data":  financial_data,
+-        "sentiment_trend": sentiment_trend,
+-        "rpt_data":        rpt_data,
+-        "auditor_notes":   auditor_raw,
+-        "risk_reasoning":  risk_reasoning,
+-        # Ensure schema field name consistency
++        "peer_companies":   peer_companies,
++        "financial_data":   financial_data,
++        "sentiment_trend":  sentiment_trend,
++        "rpt_data":         rpt_raw,
++        "auditor_notes":    auditor_raw,
++        "risk_reasoning":   risk_reasoning,
+         "fraud_risk_score": report.get("risk_level", "Low"),
+     }
+ 
+ 
+-def _build_risk_reasoning(report: dict, beneish: dict, altman: dict, breakdown: dict) -> str:
+-    parts = []
+-    m = beneish.get("m_score")
+-    z = altman.get("z_score")
+-    if m is not None:
+-        flag = "above manipulation threshold" if beneish.get("manipulation_likely") else "below manipulation threshold"
+-        parts.append(f"Beneish M-Score of {m:.2f} ({flag})")
+-    if z is not None:
+-        zone = altman.get("zone", "unknown")
+-        parts.append(f"Altman Z-Score of {z:.2f} ({zone} zone)")
+-    n_flags = len(report.get("red_flags", []))
+-    if n_flags:
+-        parts.append(f"{n_flags} red flag{'s' if n_flags > 1 else ''} detected")
+-    if not parts:
+-        return "Insufficient data for detailed reasoning."
+-    return ". ".join(parts) + "."
+-
+-
+ # ── Endpoints ─────────────────────────────────────────────────────────────────
+ 
+ @router.get("/sectors")
+ def get_sectors():
+-    """Return all sector summaries sorted by avg risk score descending."""
+     data = _load_json(SECTOR_FILE)
+     return data or []
+ 
+ 
+ @router.get("/sectors/{sector_name}")
+ def get_sector_companies(sector_name: str):
+-    """
+-    Return companies in a sector sorted by composite score descending.
+-    Used by Fraud Radar drill-down.
+-    """
+     reports = _get_all_reports()
+-    # URL-decode and case-insensitive match
+     sector_lower = sector_name.replace("%20", " ").lower()
+ 
+     companies = [
+@@ -376,7 +163,6 @@ def get_sector_companies(sector_name: str):
+ 
+ @router.get("/search")
+ def search_companies(q: str = ""):
+-    """Fuzzy search for company names. Returns top 10 matches."""
+     if len(q) < 2:
+         return []
+ 
+@@ -393,9 +179,9 @@ def search_companies(q: str = ""):
+             continue
+ 
+         score = 0
+-        if name.startswith(query):   score = 3
+-        elif cid.startswith(query):  score = 2
+-        elif query in name:          score = 1
++        if name.startswith(query):  score = 3
++        elif cid.startswith(query): score = 2
++        elif query in name:         score = 1
+ 
+         results.append({
+             "company_id":      r["company_id"],
+@@ -414,11 +200,9 @@ def search_companies(q: str = ""):
+ 
+ @router.get("/report/{company_id}")
+ def get_report(company_id: str):
+-    """Return full ForensicReport for a company."""
+     report = _find_report(company_id)
+ 
+     if report is None:
+-        # Same-sector suggestions if possible
+         reports = _get_all_reports()
+         suggestions = [
+             {"company_id": r["company_id"], "company_name": r["company_name"]}
+@@ -433,68 +217,10 @@ def get_report(company_id: str):
+     return _build_full_report(report, resolved_id)
+ 
+ 
+-# @router.get("/stream/{company_id}")
+-# def stream_narrative(company_id: str):
+-#     """SSE stream of LLM narrative for a company."""
+-#     report = _find_report(company_id)
+-
+-#     if report is None:
+-#         raise HTTPException(status_code=404, detail="Company not found")
+-
+-#     # Stream cached narrative character-by-character for live feel
+-#     cached_narrative = report.get("narrative")
+-#     if cached_narrative:
+-#         def stream_cached():
+-#             chunk_size = 40
+-#             for i in range(0, len(cached_narrative), chunk_size):
+-#                 yield f"data: {json.dumps(cached_narrative[i:i + chunk_size])}\n\n"
+-#             yield "data: [DONE]\n\n"
+-
+-#         return StreamingResponse(
+-#             stream_cached(),
+-#             media_type="text/event-stream",
+-#             headers={"Cache-Control": "no-cache", "Connection": "keep-alive"},
+-#         )
+-
+-# @router.get("/stream/{company_id}")
+-# def stream_narrative(company_id: str):
+-#     report = _find_report(company_id)
+-
+-#     if report is None:
+-#         raise HTTPException(status_code=404, detail="Company not found")
+-
+-#     return {
+-#         "narrative": report.get("narrative", "No narrative available")
+-#     }
+-
+ @router.get("/stream/{company_id}")
+ def stream_narrative(company_id: str):
+-    return {"message": "Streaming disabled on Vercel"}
+-
+-    # Live generation
+-    company_id_resolved = report["company_id"]
+-    company_data = _load_json(os.path.join(COMPANIES_DIR, f"{company_id_resolved}.json"))
+-    if not company_data:
+-        raise HTTPException(status_code=404, detail="Raw company data not found")
+-
+-    scores = {
+-        "composite_score": report.get("composite_score", 0),
+-        "risk_level":      report.get("risk_level", "Unknown"),
+-        "beneish":         report.get("beneish", {}),
+-        "altman":          report.get("altman", {}),
+-        "red_flags":       report.get("red_flags", []),
+-        "breakdown":       report.get("breakdown", {}),
+-    }
+-
+-    def stream_live():
+-        for chunk in generate_narrative_stream(company_data, scores):
+-            yield f"data: {json.dumps(chunk)}\n\n"
+-        yield "data: [DONE]\n\n"
+-
+-    return StreamingResponse(
+-        stream_live(),
+-        media_type="text/event-stream",
+-        headers={"Cache-Control": "no-cache", "Connection": "keep-alive"},
+-    )
+-
+-    @router.get("/test")
+\ No newline at end of file
++    """Streaming disabled — returns cached narrative as plain JSON."""
++    report = _find_report(company_id)
++    if report is None:
++        raise HTTPException(status_code=404, detail="Company not found")
++    return {"narrative": report.get("narrative", "No narrative available")}
+
+=== GIT LOG ===
+5d4a430 fixed routes.py
+552b6a5 removed test
+736fe8b fixed frontend api calls

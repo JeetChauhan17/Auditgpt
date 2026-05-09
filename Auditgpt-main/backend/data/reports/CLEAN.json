@@ -1,0 +1,551 @@
+{
+  "company_id": "CLEAN",
+  "company_name": "Clean Science",
+  "sector": "Chemicals",
+  "composite_score": 10.38,
+  "risk_level": "Low",
+  "beneish": {
+    "m_score": -2.0918,
+    "manipulation_likely": false,
+    "components": {
+      "DSRI": 1.0132,
+      "GMI": 1.0461,
+      "AQI": 0.9809,
+      "SGI": 1.2225,
+      "DEPI": 0.7664,
+      "SGAI": null,
+      "LVGI": 0.8725,
+      "TATA": 0.0312
+    }
+  },
+  "altman": {
+    "z_score": 27.0775,
+    "zone": "safe",
+    "components": {
+      "X1_working_capital_ta": 0,
+      "X2_retained_earnings_ta": 0.8788,
+      "X3_ebit_ta": 0.2425,
+      "X4_market_cap_tl": 40.7377,
+      "X5_revenue_ta": 0.6044
+    }
+  },
+  "anomaly_map": {
+    "OPM": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "NPM": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "ROE": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "ROCE": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Debt to equity": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Current Ratio": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Interest Coverage Ratio": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Debtor Days": {
+      "Mar 2018": -0.4317,
+      "Mar 2019": -0.5467,
+      "Mar 2020": -0.3083,
+      "Mar 2021": -0.6107,
+      "Mar 2022": 0.2833,
+      "Mar 2023": -0.1055,
+      "Mar 2024": 0.153,
+      "Mar 2025": 0.2453
+    },
+    "Inventory Turnover": {
+      "Mar 2018": -0.8513,
+      "Mar 2019": -0.7013,
+      "Mar 2020": -0.9666,
+      "Mar 2021": 0.298,
+      "Mar 2022": -0.3166,
+      "Mar 2023": 0.1429,
+      "Mar 2024": 0.7113,
+      "Mar 2025": 1.0437
+    },
+    "Asset Turnover": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Dividend Payout": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    },
+    "Earnings Per Share": {
+      "Mar 2018": null,
+      "Mar 2019": null,
+      "Mar 2020": null,
+      "Mar 2021": null,
+      "Mar 2022": null,
+      "Mar 2023": null,
+      "Mar 2024": null,
+      "Mar 2025": null
+    }
+  },
+  "trend_breaks": {
+    "breaks": {},
+    "total_count": 0
+  },
+  "red_flags": [],
+  "breakdown": {
+    "beneish_normalized": 18.16,
+    "altman_normalized": 0,
+    "industry_z_normalized": 16.08,
+    "trend_break_normalized": 0.0
+  },
+  "sentiment_trend": {},
+  "peer_companies": [
+    {
+      "name": "Pidilite Industries",
+      "sector": "Chemicals",
+      "composite_score": 10.15,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "SRF",
+      "sector": "Chemicals",
+      "composite_score": 7.3,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "Linde India",
+      "sector": "Chemicals",
+      "composite_score": 8.16,
+      "fraud_risk": "Low"
+    },
+    {
+      "name": "UPL",
+      "sector": "Chemicals",
+      "composite_score": 31.01,
+      "fraud_risk": "Medium"
+    },
+    {
+      "name": "PI Industries",
+      "sector": "Chemicals",
+      "composite_score": 10.55,
+      "fraud_risk": "Low"
+    }
+  ],
+  "financial_data": {
+    "profit_loss": {
+      "Sales+": {
+        "Mar 2018": 241.0,
+        "Mar 2019": 393.0,
+        "Mar 2020": 419.0,
+        "Mar 2021": 512.0,
+        "Mar 2022": 685.0,
+        "Mar 2023": 936.0,
+        "Mar 2024": 791.0,
+        "Mar 2025": 967.0,
+        "TTM": 971.0
+      },
+      "Expenses+": {
+        "Mar 2018": 167.0,
+        "Mar 2019": 257.0,
+        "Mar 2020": 234.0,
+        "Mar 2021": 253.0,
+        "Mar 2022": 385.0,
+        "Mar 2023": 533.0,
+        "Mar 2024": 459.0,
+        "Mar 2025": 579.0,
+        "TTM": 607.0
+      },
+      "Operating Profit": {
+        "Mar 2018": 74.0,
+        "Mar 2019": 137.0,
+        "Mar 2020": 186.0,
+        "Mar 2021": 260.0,
+        "Mar 2022": 300.0,
+        "Mar 2023": 403.0,
+        "Mar 2024": 332.0,
+        "Mar 2025": 388.0,
+        "TTM": 364.0
+      },
+      "OPM %": {
+        "Mar 2018": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      },
+      "Other Income+": {
+        "Mar 2018": 5.0,
+        "Mar 2019": 11.0,
+        "Mar 2020": 11.0,
+        "Mar 2021": 25.0,
+        "Mar 2022": 30.0,
+        "Mar 2023": 30.0,
+        "Mar 2024": 41.0,
+        "Mar 2025": 39.0,
+        "TTM": 42.0
+      },
+      "Interest": {
+        "Mar 2018": 1.0,
+        "Mar 2019": 0.0,
+        "Mar 2020": 0.0,
+        "Mar 2021": 0.0,
+        "Mar 2022": 0.0,
+        "Mar 2023": 1.0,
+        "Mar 2024": 1.0,
+        "Mar 2025": 1.0,
+        "TTM": 0.0
+      },
+      "Depreciation": {
+        "Mar 2018": 8.0,
+        "Mar 2019": 11.0,
+        "Mar 2020": 14.0,
+        "Mar 2021": 17.0,
+        "Mar 2022": 25.0,
+        "Mar 2023": 36.0,
+        "Mar 2024": 46.0,
+        "Mar 2025": 69.0,
+        "TTM": 74.0
+      },
+      "Profit before tax": {
+        "Mar 2018": 70.0,
+        "Mar 2019": 137.0,
+        "Mar 2020": 182.0,
+        "Mar 2021": 267.0,
+        "Mar 2022": 305.0,
+        "Mar 2023": 396.0,
+        "Mar 2024": 326.0,
+        "Mar 2025": 357.0,
+        "TTM": 332.0
+      },
+      "Tax %": {
+        "Mar 2018": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      },
+      "Net Profit+": {
+        "Mar 2018": 49.0,
+        "Mar 2019": 98.0,
+        "Mar 2020": 140.0,
+        "Mar 2021": 198.0,
+        "Mar 2022": 228.0,
+        "Mar 2023": 295.0,
+        "Mar 2024": 244.0,
+        "Mar 2025": 264.0,
+        "TTM": 245.0
+      },
+      "EPS in Rs": {
+        "Mar 2018": 345.41,
+        "Mar 2019": 689.84,
+        "Mar 2020": 1051.67,
+        "Mar 2021": 18.68,
+        "Mar 2022": 21.51,
+        "Mar 2023": 27.78,
+        "Mar 2024": 22.97,
+        "Mar 2025": 24.88,
+        "TTM": 23.1
+      },
+      "Dividend Payout %": {
+        "Mar 2018": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null,
+        "TTM": null
+      }
+    },
+    "balance_sheet": {
+      "Equity Capital": {
+        "Mar 2018": 1.0,
+        "Mar 2019": 1.0,
+        "Mar 2020": 1.0,
+        "Mar 2021": 11.0,
+        "Mar 2022": 11.0,
+        "Mar 2023": 11.0,
+        "Mar 2024": 11.0,
+        "Mar 2025": 11.0,
+        "Sep 2025": 11.0
+      },
+      "Reserves": {
+        "Mar 2018": 186.0,
+        "Mar 2019": 271.0,
+        "Mar 2020": 341.0,
+        "Mar 2021": 529.0,
+        "Mar 2022": 758.0,
+        "Mar 2023": 999.0,
+        "Mar 2024": 1193.0,
+        "Mar 2025": 1406.0,
+        "Sep 2025": 1489.0
+      },
+      "Borrowings+": {
+        "Mar 2018": 1.0,
+        "Mar 2019": 3.0,
+        "Mar 2020": 3.0,
+        "Mar 2021": 0.0,
+        "Mar 2022": 0.0,
+        "Mar 2023": 2.0,
+        "Mar 2024": 2.0,
+        "Mar 2025": 2.0,
+        "Sep 2025": 2.0
+      },
+      "Other Liabilities+": {
+        "Mar 2018": 48.0,
+        "Mar 2019": 53.0,
+        "Mar 2020": 85.0,
+        "Mar 2021": 120.0,
+        "Mar 2022": 156.0,
+        "Mar 2023": 140.0,
+        "Mar 2024": 191.0,
+        "Mar 2025": 181.0,
+        "Sep 2025": 182.0
+      },
+      "Total Liabilities": {
+        "Mar 2018": 236.0,
+        "Mar 2019": 327.0,
+        "Mar 2020": 430.0,
+        "Mar 2021": 660.0,
+        "Mar 2022": 925.0,
+        "Mar 2023": 1152.0,
+        "Mar 2024": 1396.0,
+        "Mar 2025": 1600.0,
+        "Sep 2025": 1684.0
+      },
+      "Fixed Assets+": {
+        "Mar 2018": 102.0,
+        "Mar 2019": 127.0,
+        "Mar 2020": 166.0,
+        "Mar 2021": 186.0,
+        "Mar 2022": 296.0,
+        "Mar 2023": 460.0,
+        "Mar 2024": 636.0,
+        "Mar 2025": 715.0,
+        "Sep 2025": 689.0
+      },
+      "CWIP": {
+        "Mar 2018": 2.0,
+        "Mar 2019": 4.0,
+        "Mar 2020": 3.0,
+        "Mar 2021": 55.0,
+        "Mar 2022": 44.0,
+        "Mar 2023": 20.0,
+        "Mar 2024": 57.0,
+        "Mar 2025": 30.0,
+        "Sep 2025": 98.0
+      },
+      "Investments": {
+        "Mar 2018": 18.0,
+        "Mar 2019": 75.0,
+        "Mar 2020": 133.0,
+        "Mar 2021": 232.0,
+        "Mar 2022": 191.0,
+        "Mar 2023": 353.0,
+        "Mar 2024": 339.0,
+        "Mar 2025": 381.0,
+        "Sep 2025": 432.0
+      },
+      "Other Assets+": {
+        "Mar 2018": 114.0,
+        "Mar 2019": 121.0,
+        "Mar 2020": 128.0,
+        "Mar 2021": 187.0,
+        "Mar 2022": 394.0,
+        "Mar 2023": 318.0,
+        "Mar 2024": 364.0,
+        "Mar 2025": 474.0,
+        "Sep 2025": 466.0
+      },
+      "Total Assets": {
+        "Mar 2018": 236.0,
+        "Mar 2019": 327.0,
+        "Mar 2020": 430.0,
+        "Mar 2021": 660.0,
+        "Mar 2022": 925.0,
+        "Mar 2023": 1152.0,
+        "Mar 2024": 1396.0,
+        "Mar 2025": 1600.0,
+        "Sep 2025": 1684.0
+      }
+    },
+    "cash_flow": {
+      "Cash from Operating Activity+": {
+        "Mar 2018": 45.0,
+        "Mar 2019": 85.0,
+        "Mar 2020": 160.0,
+        "Mar 2021": 193.0,
+        "Mar 2022": 127.0,
+        "Mar 2023": 279.0,
+        "Mar 2024": 236.0,
+        "Mar 2025": 214.0
+      },
+      "Cash from Investing Activity+": {
+        "Mar 2018": -17.0,
+        "Mar 2019": -94.0,
+        "Mar 2020": -105.0,
+        "Mar 2021": -187.0,
+        "Mar 2022": -79.0,
+        "Mar 2023": -270.0,
+        "Mar 2024": -185.0,
+        "Mar 2025": -152.0
+      },
+      "Cash from Financing Activity+": {
+        "Mar 2018": -5.0,
+        "Mar 2019": -11.0,
+        "Mar 2020": -55.0,
+        "Mar 2021": -6.0,
+        "Mar 2022": -0.0,
+        "Mar 2023": -55.0,
+        "Mar 2024": -53.0,
+        "Mar 2025": -53.0
+      },
+      "Net Cash Flow": {
+        "Mar 2018": 23.0,
+        "Mar 2019": -20.0,
+        "Mar 2020": -0.0,
+        "Mar 2021": 0.0,
+        "Mar 2022": 49.0,
+        "Mar 2023": -45.0,
+        "Mar 2024": -2.0,
+        "Mar 2025": 10.0
+      }
+    },
+    "ratios": {
+      "Debtor Days": {
+        "Mar 2018": 60.0,
+        "Mar 2019": 55.0,
+        "Mar 2020": 61.0,
+        "Mar 2021": 53.0,
+        "Mar 2022": 82.0,
+        "Mar 2023": 57.0,
+        "Mar 2024": 76.0,
+        "Mar 2025": 77.0
+      },
+      "Inventory Days": {
+        "Mar 2018": 93.0,
+        "Mar 2019": 79.0,
+        "Mar 2020": 98.0,
+        "Mar 2021": 156.0,
+        "Mar 2022": 143.0,
+        "Mar 2023": 122.0,
+        "Mar 2024": 163.0,
+        "Mar 2025": 156.0
+      },
+      "Days Payable": {
+        "Mar 2018": 85.0,
+        "Mar 2019": 48.0,
+        "Mar 2020": 101.0,
+        "Mar 2021": 180.0,
+        "Mar 2022": 166.0,
+        "Mar 2023": 90.0,
+        "Mar 2024": 139.0,
+        "Mar 2025": 103.0
+      },
+      "Cash Conversion Cycle": {
+        "Mar 2018": 69.0,
+        "Mar 2019": 87.0,
+        "Mar 2020": 58.0,
+        "Mar 2021": 29.0,
+        "Mar 2022": 59.0,
+        "Mar 2023": 89.0,
+        "Mar 2024": 99.0,
+        "Mar 2025": 129.0
+      },
+      "Working Capital Days": {
+        "Mar 2018": 60.0,
+        "Mar 2019": 62.0,
+        "Mar 2020": 33.0,
+        "Mar 2021": 32.0,
+        "Mar 2022": 90.0,
+        "Mar 2023": 68.0,
+        "Mar 2024": 86.0,
+        "Mar 2025": 105.0
+      },
+      "ROCE %": {
+        "Mar 2018": null,
+        "Mar 2019": null,
+        "Mar 2020": null,
+        "Mar 2021": null,
+        "Mar 2022": null,
+        "Mar 2023": null,
+        "Mar 2024": null,
+        "Mar 2025": null
+      }
+    }
+  },
+  "narrative": null
+}

@@ -1,0 +1,21 @@
+.sentiment-trend.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 24px;
+}
+
+.sentiment-trend .chart-container {
+  margin: 16px 0;
+}
+
+.sentiment-legend {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+
+.sentiment-positive { color: var(--green); }
+.sentiment-neutral { color: var(--amber); }
+.sentiment-negative { color: var(--red); }

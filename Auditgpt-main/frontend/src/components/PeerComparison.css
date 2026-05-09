@@ -1,0 +1,43 @@
+.peer-comparison {
+  width: 100%;
+}
+
+.peer-comparison.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 40px;
+}
+
+.chart-container {
+  margin: 16px 0;
+}
+
+.peer-table {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.peer-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+.peer-name {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.peer-score {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  width: 40px;
+  text-align: right;
+}
