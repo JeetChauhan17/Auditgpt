@@ -460,7 +460,6 @@
 
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
 import './Home.css';
 
 // ── Counter animation helper ──────────────────────────────────────────────
@@ -522,7 +521,51 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      {/* ── NAV ── */}
+      {/* <nav className="home-nav">
+        <span className="nav-logo">AuditGPT<em> // v2.4</em></span>
+        <div className="nav-links">
+          <button className="nav-link" onClick={() => scrollTo('how')}>How It Works</button>
+          <button className="nav-link" onClick={() => scrollTo('features')}>Features</button>
+          <button className="nav-link" onClick={() => scrollTo('models')}>Models</button>
+          <span className="nav-cta" onClick={() => navigate('/radar')} style={{ cursor: 'pointer' }}>Live Demo →</span>
+        </div>
+      </nav> */}
+
+      {/* ── NAV ── */}
+      <nav className="home-nav">
+        <span className="nav-logo">AuditGPT<em> // v2.4</em></span>
+
+        <div className="nav-divider" />
+
+        <div className="nav-links">
+
+          {/* ── same-page anchors ── */}
+          <button className="nav-link" onClick={() => scrollTo('how')}>How It Works</button>
+          <button className="nav-link" onClick={() => scrollTo('features')}>Features</button>
+          <button className="nav-link" onClick={() => scrollTo('models')}>Models</button>
+
+          {/* ── separator ── */}
+          <div className="nav-sep" />
+
+          {/* ── app pages ── */}
+          <button className="nav-page-link" onClick={() => navigate('/radar')}>
+            Fraud Radar
+          </button>
+          <button className="nav-page-link" onClick={() => navigate('/critical')}>
+            Critical Section
+          </button>
+          <button className="nav-page-link nav-satyam" onClick={() => navigate('/cases')}>
+            Real Cases
+          </button>
+
+        </div>
+
+        {/* ── CTA ── */}
+        <button className="nav-cta" onClick={() => navigate('/radar')}>
+          Run Analysis →
+        </button>
+      </nav>
 
       {/* ── HERO ── */}
       <section className="hero">

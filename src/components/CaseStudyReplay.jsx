@@ -39,7 +39,7 @@ function MetricTile({ metricKey, value, thresholds, metricInfo, accentColor }) {
   return (
     <div style={{
       background: flagged ? "rgba(255,68,85,0.04)" : "#04070e",
-      borderRight: `1px solid ${flagged ? "#ff445533" : "#151e2a"}`, borderBottom: `1px solid ${flagged ? "#ff445533" : "#151e2a"}`, borderLeft: `1px solid ${flagged ? "#ff445533" : "#151e2a"}`,
+      border: `1px solid ${flagged ? "#ff445533" : "#151e2a"}`,
       borderTop: `2px solid ${col}`,
       borderRadius: 4, padding: "14px 16px",
       transition: "background 0.5s, border-color 0.5s",
@@ -300,7 +300,7 @@ export default function CaseStudyReplay({ scandal }) {
   return (
     <div style={{
       background: `radial-gradient(ellipse at 15% 40%, ${isFraud || data.isCollapse ? "rgba(255,68,85,0.07)" : "rgba(0,255,136,0.03)"} 0%, transparent 55%), #04070e`,
-      borderRight: "1px solid #100d16", borderBottom: "1px solid #100d16", borderLeft: "1px solid #100d16",
+      border: "1px solid #100d16",
       borderTop: `2px solid ${accentColor}`,
       borderRadius: 4,
       overflow: "hidden",
@@ -359,7 +359,7 @@ export default function CaseStudyReplay({ scandal }) {
 
           {/* Score card */}
           <div style={{
-            background: "#070b12", borderTop: `1px solid ${mCol}33`, borderRight: `1px solid ${mCol}33`, borderBottom: `1px solid ${mCol}33`,
+            background: "#070b12", border: `1px solid ${mCol}33`,
             borderLeft: `3px solid ${mCol}`, borderRadius: 4, padding: "14px 16px",
           }}>
             <div style={{ fontFamily: MO, fontSize: 9, color: "#3a4a60", letterSpacing: "0.14em", marginBottom: 8, fontWeight: 600 }}>
@@ -448,7 +448,7 @@ export default function CaseStudyReplay({ scandal }) {
           {data.isCollapse && (
             <div style={{
               marginTop: 20, padding: "14px 18px",
-              background: "rgba(255,68,85,0.08)", borderTop: "1px solid rgba(255,68,85,0.3)", borderRight: "1px solid rgba(255,68,85,0.3)", borderBottom: "1px solid rgba(255,68,85,0.3)",
+              background: "rgba(255,68,85,0.08)", border: "1px solid rgba(255,68,85,0.3)",
               borderLeft: "3px solid #ff4455", borderRadius: 4,
             }}>
               <div style={{ fontFamily: MO, fontSize: 9, color: "#ff4455", letterSpacing: "0.16em", marginBottom: 6, fontWeight: 700 }}>

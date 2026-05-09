@@ -163,7 +163,6 @@ export default function Navbar() {
         <PageLink to="/radar"    label="Fraud Radar"      />
         <PageLink to="/critical" label="Critical Section" />
         <PageLink to="/cases"   label="Real Cases" danger />
-        <PageLink to="/satyam"  label="Satyam Case" danger />
 
       </div>
 

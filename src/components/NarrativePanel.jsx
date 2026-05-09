@@ -6,7 +6,7 @@ export default function NarrativePanel({ companyId, cachedNarrative }) {
   const [streaming, setStreaming] = useState(false)
   const textRef = useRef(null)
 
-  const API = import.meta.env.VITE_API_URL || ''
+  const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
   useEffect(() => {
     // If we have a cached narrative, stream it locally for effect

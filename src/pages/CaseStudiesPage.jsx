@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import Navbar from "../components/Navbar";
 import CaseStudyReplay from "../components/CaseStudyReplay";
 import { ALL_SCANDALS, SCANDAL_META } from "../data/scandalData";
 
@@ -32,7 +31,7 @@ function ScandalCard({ meta, isActive, onClick }) {
         background: isActive
           ? `linear-gradient(135deg,${meta.color}14,${meta.color}08)`
           : hov ? "#0d1422" : "#080c14",
-        borderRight: `1px solid ${isActive ? meta.color : hov ? meta.color + "55" : "#0d1622"}`, borderBottom: `1px solid ${isActive ? meta.color : hov ? meta.color + "55" : "#0d1622"}`, borderLeft: `1px solid ${isActive ? meta.color : hov ? meta.color + "55" : "#0d1622"}`,
+        border: `1px solid ${isActive ? meta.color : hov ? meta.color + "55" : "#0d1622"}`,
         borderTop: `2px solid ${isActive ? meta.color : hov ? meta.color + "88" : "#1a2535"}`,
         borderRadius: 4,
         padding: "18px 20px",
@@ -148,7 +147,33 @@ export default function CaseStudiesPage() {
     <div style={{ minHeight: "100vh", background: "#070b12", color: "#c0ccd8" }}>
       <Scanlines />
 
-      <Navbar />
+      {/* NAV */}
+      <header style={{
+        position: "sticky", top: 0, zIndex: 200, height: 46,
+        display: "flex", alignItems: "center", padding: "0 40px",
+        background: "#070b12f2", backdropFilter: "blur(20px)",
+        borderBottom: "1px solid #0d1622",
+      }}>
+        <a href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10, marginRight: 36 }}>
+          <div style={{ width: 26, height: 26, borderRadius: 4, background: "linear-gradient(135deg,#00ff88,#00d4ff)", display: "grid", placeItems: "center" }}>
+            <span style={{ fontSize: 13, fontWeight: 900, color: "#070b12", fontFamily: SA }}>A</span>
+          </div>
+          <span style={{ fontFamily: SA, fontSize: 14, fontWeight: 700, color: "#c8d4e4", letterSpacing: "-0.01em" }}>
+            Audit<span style={{ color: "#00ff88" }}>GPT</span>
+          </span>
+        </a>
+        <div style={{ display: "flex", alignItems: "center", gap: 7, fontFamily: MO, fontSize: 10, color: "#2a3850" }}>
+          <span onClick={() => navigate("/radar")} style={{ cursor: "pointer", transition: "color .15s" }}
+            onMouseEnter={e => e.target.style.color = "#6a7a90"}
+            onMouseLeave={e => e.target.style.color = "#2a3850"}>RADAR</span>
+          <span style={{ color: "#141c28" }}>›</span>
+          <span style={{ color: "#a855f7", letterSpacing: "0.08em" }}>CASE STUDIES</span>
+        </div>
+        <div style={{ marginLeft: "auto", fontFamily: MO, fontSize: 9, textAlign: "right", lineHeight: 1.8 }}>
+          <div style={{ color: "#00ff88" }}>{t.toLocaleTimeString("en-IN", { hour12: false })} IST</div>
+          <div style={{ color: "#1e2838" }}>{t.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}</div>
+        </div>
+      </header>
 
       {/* accent stripe */}
       <div style={{ height: 2, background: "linear-gradient(90deg,#a855f7 0%,#a855f744 40%,transparent 70%)" }} />
@@ -158,7 +183,7 @@ export default function CaseStudiesPage() {
         {/* ── PAGE HERO ──────────────────────────────────────────────────── */}
         <div style={{
           background: "linear-gradient(135deg,#0a0e17,#080c14)",
-          borderRight: "1px solid #0d1622", borderBottom: "1px solid #0d1622", borderLeft: "1px solid #0d1622", borderTop: "2px solid #a855f7",
+          border: "1px solid #0d1622", borderTop: "2px solid #a855f7",
           borderRadius: 4, padding: "32px 36px", marginBottom: 20,
           position: "relative", overflow: "hidden",
         }}>
@@ -252,7 +277,7 @@ export default function CaseStudiesPage() {
         {/* ── LESSONS LEARNED ────────────────────────────────────────────── */}
         <div style={{
           marginTop: 14,
-          background: "#080c14", borderRight: "1px solid #0d1622", borderBottom: "1px solid #0d1622", borderLeft: "1px solid #0d1622",
+          background: "#080c14", border: "1px solid #0d1622",
           borderTop: "2px solid #2a3850",
           borderRadius: 4, padding: "24px 28px",
         }}>
@@ -267,7 +292,7 @@ export default function CaseStudiesPage() {
               { label: "COMPLEXITY AS COVER", desc: "347 subsidiaries (IL&FS), 3,000 SPEs (Enron), 7,561 bank accounts (Satyam) — complexity is always a fraud enabler, not an excuse for missing it.", color: "#00d4ff" },
             ].map(({ label, desc, color }) => (
               <div key={label} style={{
-                background: "#070b12", borderTop: "1px solid #0d1622", borderRight: "1px solid #0d1622", borderBottom: "1px solid #0d1622",
+                background: "#070b12", border: "1px solid #0d1622",
                 borderLeft: `3px solid ${color}`,
                 borderRadius: 3, padding: "14px 16px",
               }}>

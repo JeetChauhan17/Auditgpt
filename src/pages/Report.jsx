@@ -624,7 +624,7 @@ import { useParams, useNavigate } from "react-router-dom";
 // import SatyamReplaySection from "../components/SatyamReplaySection"
 import Navbar from "../components/Navbar";
 // const API = "http://localhost:8000/api";
-const API = import.meta.env.VITE_API_URL || "/api";
+const API = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 // ─── utils ──────────────────────────────────────────────────────────────────
 const riskOf = (s) => {
   const v = Number(s) || 0;
@@ -744,7 +744,7 @@ function BdRow({ label, weight, value, color }) {
 // ─── pane shell ──────────────────────────────────────────────────────────────
 function Pane({ tag, title, accent = "#1a2535", action, children, style: sx = {} }) {
   return (
-    <div style={{ background: "#090d16", borderRight: "1px solid #111c2a", borderBottom: "1px solid #111c2a", borderLeft: "1px solid #111c2a", borderTop: `2px solid ${accent}`, borderRadius: 3, padding: "20px 22px 18px", ...sx }}>
+    <div style={{ background: "#090d16", border: "1px solid #111c2a", borderTop: `2px solid ${accent}`, borderRadius: 3, padding: "20px 22px 18px", ...sx }}>
       <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 14 }}>
         <div>
           {tag && <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 7, color: "#1e2d40", letterSpacing: "0.22em", marginBottom: 4 }}>{tag}</div>}
@@ -1266,7 +1266,7 @@ export default function Report() {
 
   if (loading) return (
     <div style={{ minHeight: "100vh", background: "#070b12", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 14 }}>
-      <div style={{ width: 30, height: 30, borderRight: "2px solid #0d1520", borderBottom: "2px solid #0d1520", borderLeft: "2px solid #0d1520", borderTop: "2px solid #00ff88", borderRadius: "50%", animation: "spin 0.7s linear infinite" }} />
+      <div style={{ width: 30, height: 30, border: "2px solid #0d1520", borderTop: "2px solid #00ff88", borderRadius: "50%", animation: "spin 0.7s linear infinite" }} />
       <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 9, color: "#1e2d40", letterSpacing: "0.14em" }}>LOADING FORENSIC REPORT…</span>
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
@@ -1274,7 +1274,7 @@ export default function Report() {
 
   if (err || !report) return (
     <div style={{ minHeight: "100vh", background: "#070b12", display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ background: "#0f0a12", borderTop: "1px solid #ff445530", borderRight: "1px solid #ff445530", borderBottom: "1px solid #ff445530", borderLeft: "3px solid #ff4455", borderRadius: 3, padding: "16px 22px", fontFamily: "'JetBrains Mono',monospace", fontSize: 10, color: "#ff5566" }}>
+      <div style={{ background: "#0f0a12", border: "1px solid #ff445530", borderLeft: "3px solid #ff4455", borderRadius: 3, padding: "16px 22px", fontFamily: "'JetBrains Mono',monospace", fontSize: 10, color: "#ff5566" }}>
         ⚠ {err || "Unknown error"} — could not load {companyId}
       </div>
     </div>
@@ -1313,7 +1313,7 @@ export default function Report() {
         <div style={{
           display: "grid", gridTemplateColumns: "auto 1fr auto",
           gap: 26, alignItems: "start",
-          background: "#090d16", borderRight: "1px solid #111c2a", borderBottom: "1px solid #111c2a", borderLeft: "1px solid #111c2a",
+          background: "#090d16", border: "1px solid #111c2a",
           borderTop: `2px solid ${risk.hex}`,
           borderRadius: 3, padding: "24px 28px", marginBottom: 12,
         }}>
@@ -1331,7 +1331,7 @@ export default function Report() {
             </div>
             {report.risk_reasoning && (
               <div style={{
-                background: `${risk.hex}08`, borderTop: `1px solid ${risk.dim}`, borderRight: `1px solid ${risk.dim}`, borderBottom: `1px solid ${risk.dim}`,
+                background: `${risk.hex}08`, border: `1px solid ${risk.dim}`,
                 borderLeft: `3px solid ${risk.hex}`, borderRadius: 2,
                 padding: "9px 13px", fontFamily: "'Space Grotesk',sans-serif",
                 fontSize: 12, color: "#5a6a82", lineHeight: 1.65, maxWidth: 460,

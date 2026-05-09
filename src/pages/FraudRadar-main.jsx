@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
 
-const API = import.meta.env.VITE_API_URL || "/api";
+const API = "http://localhost:8000/api";
 
 // ── helpers ────────────────────────────────────────────────────────────────
 const riskMeta = (score) => {
@@ -57,9 +56,7 @@ function SectorCard({ sector, avgScore, companyCount, onClick, isActive }) {
         background: isActive
           ? `linear-gradient(135deg, #1a1f2e 0%, #0f1420 100%)`
           : hovered ? "#141824" : "#0f1420",
-        borderTop: `1px solid ${isActive ? m.color : hovered ? "#2a3040" : "#1e2535"}`,
-        borderRight: `1px solid ${isActive ? m.color : hovered ? "#2a3040" : "#1e2535"}`,
-        borderBottom: `1px solid ${isActive ? m.color : hovered ? "#2a3040" : "#1e2535"}`,
+        border: `1px solid ${isActive ? m.color : hovered ? "#2a3040" : "#1e2535"}`,
         borderLeft: `3px solid ${m.color}`,
         borderRadius: 4, padding: "18px 20px",
         transition: "all 0.18s ease",
@@ -225,7 +222,7 @@ function SearchBar({ onNavigate }) {
         />
         {loading && (
           <div style={{
-            width: 12, height: 12, borderRight: "2px solid #1a2535", borderBottom: "2px solid #1a2535", borderLeft: "2px solid #1a2535",
+            width: 12, height: 12, border: "2px solid #1a2535",
             borderTop: "2px solid #00ff88", borderRadius: "50%",
             animation: "spin 0.6s linear infinite",
           }} />
@@ -340,7 +337,7 @@ function CompanyPanel({ sectorName, onClose, onNavigate }) {
       <div style={{ flex: 1, overflowY: "auto" }}>
         {loading ? (
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", gap: 12 }}>
-            <div style={{ width: 24, height: 24, borderRight: "2px solid #1a2535", borderBottom: "2px solid #1a2535", borderLeft: "2px solid #1a2535", borderTop: "2px solid #00ff88", borderRadius: "50%", animation: "spin 0.8s linear infinite" }} />
+            <div style={{ width: 24, height: 24, border: "2px solid #1a2535", borderTop: "2px solid #00ff88", borderRadius: "50%", animation: "spin 0.8s linear infinite" }} />
             <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#3a4560" }}>Loading companies…</span>
           </div>
         ) : companies.length === 0 ? (
@@ -436,9 +433,33 @@ export default function FraudRadar() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#070b12", color: "#c8d0e0", fontFamily: "'JetBrains Mono', monospace", paddingBottom: 80 }}>
-      {/* <div style={overlayStyle} /> */}
+      <div style={overlayStyle} />
 
-      <Navbar />
+      {/* NAV */}
+      <div style={{
+        position: "sticky", top: 0, zIndex: 40,
+        background: "#070b12cc", backdropFilter: "blur(10px)",
+        borderBottom: "1px solid #1a1f2e", padding: "0 32px",
+        display: "flex", alignItems: "center", justifyContent: "space-between", height: 52,
+      }}>
+        <a href="/" style={{ textDecoration: "none" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <div style={{ width: 28, height: 28, borderRadius: 3, background: "linear-gradient(135deg, #00ff88 0%, #00d4ff 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <span style={{ fontSize: 14, fontWeight: 900, color: "#070b12", fontFamily: "'Space Grotesk', sans-serif" }}>A</span>
+            </div>
+            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 14, fontWeight: 700, color: "#e0eaf4", letterSpacing: "0.02em" }}>
+              Audit<span style={{ color: "#00ff88" }}>GPT</span>
+            </span>
+          </div>
+        </a>
+        <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 10, color: "#3a4560" }}>
+          <span>NSE</span><span>›</span><span style={{ color: "#00ff88" }}>FRAUD RADAR</span>
+        </div>
+        <div style={{ textAlign: "right", fontSize: 9, lineHeight: 1.5 }}>
+          <div style={{ color: "#00ff88", letterSpacing: "0.1em" }}>{timeStr} IST</div>
+          <div style={{ color: "#3a4560" }}>{dateStr}</div>
+        </div>
+      </div>
 
       {/* CONTENT */}
       <div style={{
@@ -463,7 +484,7 @@ export default function FraudRadar() {
         </div>
 
         {error && (
-          <div style={{ background: "#1a0a0e", borderTop: "1px solid #ff445544", borderRight: "1px solid #ff445544", borderBottom: "1px solid #ff445544", borderLeft: "3px solid #ff4455", borderRadius: 4, padding: "14px 18px", marginBottom: 28, fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#ff7788" }}>
+          <div style={{ background: "#1a0a0e", border: "1px solid #ff445544", borderLeft: "3px solid #ff4455", borderRadius: 4, padding: "14px 18px", marginBottom: 28, fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#ff7788" }}>
             ⚠ Backend unreachable — {error}.
             <span style={{ color: "#5a3040", marginLeft: 6 }}>Start: cd backend && uvicorn main:app --reload --port 8000</span>
           </div>
