@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import CaseStudyReplay from "../components/CaseStudyReplay";
 import { ALL_SCANDALS, SCANDAL_META } from "../data/scandalData";
+import Navbar from "../components/Navbar";
 
 const MO = "'JetBrains Mono', monospace";
 const SA = "'Space Grotesk', sans-serif";
@@ -115,17 +116,10 @@ function HeaderStat({ label, value, color = "#00ff88" }) {
 
 // ─── MAIN PAGE ────────────────────────────────────────────────────────────────
 export default function CaseStudiesPage() {
-  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-  const [t, setT] = useState(new Date());
 
   const defaultId = searchParams.get("case") || "satyam";
   const [activeId, setActiveId] = useState(defaultId);
-
-  useEffect(() => {
-    const i = setInterval(() => setT(new Date()), 1000);
-    return () => clearInterval(i);
-  }, []);
 
   const selectCase = (id) => {
     setActiveId(id);
@@ -147,33 +141,7 @@ export default function CaseStudiesPage() {
     <div style={{ minHeight: "100vh", background: "#070b12", color: "#c0ccd8" }}>
       <Scanlines />
 
-      {/* NAV */}
-      <header style={{
-        position: "sticky", top: 0, zIndex: 200, height: 46,
-        display: "flex", alignItems: "center", padding: "0 40px",
-        background: "#070b12f2", backdropFilter: "blur(20px)",
-        borderBottom: "1px solid #0d1622",
-      }}>
-        <a href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10, marginRight: 36 }}>
-          <div style={{ width: 26, height: 26, borderRadius: 4, background: "linear-gradient(135deg,#00ff88,#00d4ff)", display: "grid", placeItems: "center" }}>
-            <span style={{ fontSize: 13, fontWeight: 900, color: "#070b12", fontFamily: SA }}>A</span>
-          </div>
-          <span style={{ fontFamily: SA, fontSize: 14, fontWeight: 700, color: "#c8d4e4", letterSpacing: "-0.01em" }}>
-            Audit<span style={{ color: "#00ff88" }}>GPT</span>
-          </span>
-        </a>
-        <div style={{ display: "flex", alignItems: "center", gap: 7, fontFamily: MO, fontSize: 10, color: "#2a3850" }}>
-          <span onClick={() => navigate("/radar")} style={{ cursor: "pointer", transition: "color .15s" }}
-            onMouseEnter={e => e.target.style.color = "#6a7a90"}
-            onMouseLeave={e => e.target.style.color = "#2a3850"}>RADAR</span>
-          <span style={{ color: "#141c28" }}>›</span>
-          <span style={{ color: "#a855f7", letterSpacing: "0.08em" }}>CASE STUDIES</span>
-        </div>
-        <div style={{ marginLeft: "auto", fontFamily: MO, fontSize: 9, textAlign: "right", lineHeight: 1.8 }}>
-          <div style={{ color: "#00ff88" }}>{t.toLocaleTimeString("en-IN", { hour12: false })} IST</div>
-          <div style={{ color: "#1e2838" }}>{t.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}</div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* accent stripe */}
       <div style={{ height: 2, background: "linear-gradient(90deg,#a855f7 0%,#a855f744 40%,transparent 70%)" }} />

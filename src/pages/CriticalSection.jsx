@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const API = import.meta.env.VITE_API_URL || "/api";
 const MO = "'JetBrains Mono', monospace";
@@ -24,47 +24,7 @@ const Scanlines = () => (
   }} />
 );
 
-// ─── nav ──────────────────────────────────────────────────────────────────────
-function Nav() {
-  const navigate = useNavigate();
-  const [t, setT] = useState(new Date());
-  useEffect(() => { const id = setInterval(() => setT(new Date()), 1000); return () => clearInterval(id); }, []);
-  return (
-    <header style={{
-      position: "sticky", top: 0, zIndex: 100, height: 46,
-      display: "flex", alignItems: "center", padding: "0 40px",
-      background: "#070b12f2", backdropFilter: "blur(20px)",
-      borderBottom: "1px solid #0d1622",
-    }}>
-      <a href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10, marginRight: 36 }}>
-        <div style={{ width: 26, height: 26, borderRadius: 4, background: "linear-gradient(135deg,#00ff88,#00d4ff)", display: "grid", placeItems: "center" }}>
-          <span style={{ fontSize: 13, fontWeight: 900, color: "#070b12", fontFamily: SA }}>A</span>
-        </div>
-        <span style={{ fontFamily: SA, fontSize: 14, fontWeight: 700, color: "#c8d4e4" }}>
-          Audit<span style={{ color: "#00ff88" }}>GPT</span>
-        </span>
-      </a>
-      <div style={{ display: "flex", alignItems: "center", gap: 7, fontFamily: MO, fontSize: 10, color: "#2a3850" }}>
-        <span onClick={() => navigate("/radar")} style={{ cursor: "pointer" }}
-          onMouseEnter={e => e.target.style.color = "#6a7a90"}
-          onMouseLeave={e => e.target.style.color = "#2a3850"}>RADAR</span>
-        <span style={{ color: "#141c28" }}>›</span>
-        <span style={{ color: "#ff4455", letterSpacing: "0.08em", fontWeight: 700 }}>⚠ CRITICAL SECTION</span>
-      </div>
-      <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 20 }}>
-        <div style={{
-          fontFamily: MO, fontSize: 8, color: "#ff4455", background: "rgba(255,68,85,0.1)",
-          border: "1px solid rgba(255,68,85,0.3)", padding: "4px 10px", borderRadius: 2,
-          letterSpacing: "0.12em", animation: "critBlink 2s ease-in-out infinite",
-        }}>◉ LIVE THREAT MONITOR</div>
-        <div style={{ fontFamily: MO, fontSize: 9, textAlign: "right", lineHeight: 1.8 }}>
-          <div style={{ color: "#00ff88" }}>{t.toLocaleTimeString("en-IN", { hour12: false })} IST</div>
-          <div style={{ color: "#1e2838" }}>{t.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}</div>
-        </div>
-      </div>
-    </header>
-  );
-}
+
 
 // ─── SECTION 1: THREAT MATRIX HEATMAP ────────────────────────────────────────
 function ThreatMatrix({ companies, onSelect, selectedId }) {
@@ -866,7 +826,7 @@ export default function CriticalSection() {
   return (
     <div style={{ minHeight: "100vh", background: "#070b12", color: "#c0ccd8" }}>
       <Scanlines />
-      <Nav />
+      <Navbar />
 
       {/* threat stripe */}
       <div style={{ height: 2, background: "linear-gradient(90deg,#ff4455 0%,#ff445555 40%,transparent 70%)" }} />

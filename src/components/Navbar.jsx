@@ -160,9 +160,10 @@ export default function Navbar() {
         <Sep />
 
         {/* App pages */}
-        <PageLink to="/radar"    label="Fraud Radar"      />
-        <PageLink to="/critical" label="Critical Section" />
-        <PageLink to="/cases"   label="Real Cases" danger />
+        <PageLink to="/radar"    label="Fraud Radar"       />
+
+        <PageLink to="/critical" label="Critical Section"  />
+        <PageLink to="/cases"   label="Real Cases" danger  />
 
       </div>
 

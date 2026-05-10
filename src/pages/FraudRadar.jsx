@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
-// const API = "auditgpt-back.vercel.app/api";
 const API = import.meta.env.VITE_API_URL || "/api";
 // ── helpers ────────────────────────────────────────────────────────────────
 const riskMeta = (score) => {
@@ -427,39 +427,11 @@ export default function FraudRadar() {
 
   const handleNavigate = (companyId) => navigate(`/report/${companyId}`);
 
-  const now = new Date();
-  const timeStr = now.toLocaleTimeString("en-IN", { hour12: false });
-  const dateStr = now.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
-
   return (
     <div style={{ minHeight: "100vh", background: "#070b12", color: "#c8d0e0", fontFamily: "'JetBrains Mono', monospace", paddingBottom: 80 }}>
       {/* <div style={overlayStyle} /> */}
 
-      {/* NAV */}
-      <div style={{
-        position: "sticky", top: 0, zIndex: 40,
-        background: "#070b12cc", backdropFilter: "blur(10px)",
-        borderBottom: "1px solid #1a1f2e", padding: "0 32px",
-        display: "flex", alignItems: "center", justifyContent: "space-between", height: 52,
-      }}>
-        <a href="/" style={{ textDecoration: "none" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <div style={{ width: 28, height: 28, borderRadius: 3, background: "linear-gradient(135deg, #00ff88 0%, #00d4ff 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <span style={{ fontSize: 14, fontWeight: 900, color: "#070b12", fontFamily: "'Space Grotesk', sans-serif" }}>A</span>
-            </div>
-            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 14, fontWeight: 700, color: "#e0eaf4", letterSpacing: "0.02em" }}>
-              Audit<span style={{ color: "#00ff88" }}>GPT</span>
-            </span>
-          </div>
-        </a>
-        <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 10, color: "#3a4560" }}>
-          <span>NSE</span><span>›</span><span style={{ color: "#00ff88" }}>FRAUD RADAR</span>
-        </div>
-        <div style={{ textAlign: "right", fontSize: 9, lineHeight: 1.5 }}>
-          <div style={{ color: "#00ff88", letterSpacing: "0.1em" }}>{timeStr} IST</div>
-          <div style={{ color: "#3a4560" }}>{dateStr}</div>
-        </div>
-      </div>
+      <Navbar />
 
       {/* CONTENT */}
       <div style={{
