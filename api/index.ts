@@ -8,7 +8,6 @@ app.use(express.json());
 const DATA_DIR = path.join(process.cwd(), "Auditgpt-main", "backend", "data");
 const REPORTS_DIR = path.join(DATA_DIR, "reports");
 const COMPANIES_DIR = path.join(DATA_DIR, "companies");
-const SECTOR_FILE = path.join(DATA_DIR, "sector_summary.json");
 
 function loadJson(filePath) {
   try {
@@ -123,8 +122,27 @@ app.get("/api/health", (req, res) => {
 });
 
 app.get("/api/sectors", (req, res) => {
-  const data = loadJson(SECTOR_FILE);
-  res.json(data || []);
+  const reports = getReports();
+  const sectors: Record<string, { scores: number[]; count: number }> = {};
+  for (const cid in reports) {
+    const r = reports[cid];
+    const sector = r.sector || "Unknown";
+    if (!sectors[sector]) {
+      sectors[sector] = { scores: [], count: 0 };
+    }
+    sectors[sector].scores.push(r.composite_score || 0);
+    sectors[sector].count++;
+  }
+  const result = Object.entries(sectors).map(([name, data]) => {
+    const avg = data.scores.reduce((a, b) => a + b, 0) / data.scores.length;
+    let risk = "Low";
+    if (avg > 75) risk = "Critical";
+    else if (avg > 50) risk = "High";
+    else if (avg > 25) risk = "Medium";
+    return { sector_name: name, avg_risk_score: Math.round(avg * 100) / 100, company_count: data.count, risk_level: risk };
+  });
+  result.sort((a, b) => b.avg_risk_score - a.avg_risk_score);
+  res.json(result);
 });
 
 app.get("/api/sectors/:sector_name", (req, res) => {
