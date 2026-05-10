@@ -959,12 +959,7 @@ export default function Home() {
         <p className="cta-sub">AuditGPT is open-source and built for the Indian market. Run your first forensic scan in under 60 seconds.</p>
         <div className="cta-actions">
           <span className="btn-primary" onClick={() => navigate('/radar')} style={{ cursor: 'pointer' }}>Launch AuditGPT →</span>
-          <a href="https://github.com" className="btn-secondary">View on GitHub</a>
-        </div>
-        <div className="stamp-wrap">
-          <div className="stamp">
-            <div className="stamp-text">REFER<br />TO<br />SEBI</div>
-          </div>
+          <a href="https://github.com/JeetChauhan17/Auditgpt" className="btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </div>
       </section>
 
@@ -972,11 +967,12 @@ export default function Home() {
       <footer className="home-footer">
         <div className="footer-brand">AuditGPT</div>
         <div className="footer-note">NSE Forensic Intelligence · FY2026 · Not financial advice</div>
+        <div className="footer-madeby">Made by <span style={{color:"#00ff88"}}>Jeet Chauhan</span></div>
         <div className="footer-links">
-          <a href="#" className="footer-link">Docs</a>
-          <a href="#" className="footer-link">GitHub</a>
-          <a href="#" className="footer-link">API</a>
-          <a href="#" className="footer-link">Contact</a>
+          <a href="https://github.com/JeetChauhan17/Auditgpt#readme" className="footer-link" target="_blank" rel="noopener noreferrer">Docs</a>
+          <a href="https://github.com/JeetChauhan17/Auditgpt" className="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/JeetChauhan17" className="footer-link" target="_blank" rel="noopener noreferrer">GitHub @JeetChauhan17</a>
+          <a href="https://www.linkedin.com/in/jeetchauhan18/" className="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </footer>
     </>

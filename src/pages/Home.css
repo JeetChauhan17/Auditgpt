@@ -636,6 +636,12 @@ body::before {
   font-size: 11px; color: var(--text-3);
   text-transform: uppercase; letter-spacing: 0.8px;
 }
+.footer-madeby {
+  font-family: var(--font-mono);
+  font-size: 10px; color: var(--text-3);
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+}
 .footer-links { display: flex; gap: 24px; }
 .footer-link {
   font-family: var(--font-mono);
